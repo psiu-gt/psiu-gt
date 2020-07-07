@@ -476,45 +476,45 @@ export function rainbow(textNode) {
     }
 
     textNode.style.textShadow =
-      '1px 1px 0px ' +
+      '0.25px 0.25px 0px ' +
       clr[0] +
-      ', 2px 2px 0px ' +
+      ', .5px .5px 0px ' +
       clr[1] +
-      ', 3px 3px 0px ' +
+      ', .75px .75px 0px ' +
       clr[2] +
-      ', 4px 4px 0px ' +
+      ', 1px 1px 0px ' +
       clr[3] +
-      ', 5px 5px 0px ' +
+      ', 1.25px 1.25px 0px ' +
       clr[4] +
-      ', 6px 6px 0px ' +
+      ', 1.5px 1.5px 0px ' +
       clr[5] +
-      ', 7px 7px 0px ' +
+      ', 1.75px 1.75px 0px ' +
       clr[6] +
-      ', 8px 8px 0px ' +
+      ', 2px 2px 0px ' +
       clr[7] +
-      ', 9px 9px 0px ' +
+      ', 2.25px 2.25px 0px ' +
       clr[8] +
-      ', 10px 10px 0px ' +
+      ', 2.5px 2.5px 0px ' +
       clr[9] +
-      ', 11px 11px 0px ' +
+      ', 2.75px 2.75px 0px ' +
       clr[10] +
-      ', 12px 12px 0px ' +
+      ', 3px 3px 0px ' +
       clr[11] +
-      ', 13px 13px 0px ' +
+      ', 3.25px 3.25px 0px ' +
       clr[12] +
-      ', 14px 14px 0px ' +
+      ', 3.5px 3.5px 0px ' +
       clr[13] +
-      ', 15px 15px 0px ' +
+      ', 3.75px 3.75px 0px ' +
       clr[14] +
-      ', 16px 16px 0px ' +
+      ', 4px 4px 0px ' +
       clr[15] +
-      ', 17px 17px 0px ' +
+      ', 4.25px 4.25px 0px ' +
       clr[16] +
-      ', 18px 18px 0px ' +
+      ', 4.5px 4.5px 0px ' +
       clr[17] +
-      ', 19px 19px 0px ' +
+      ', 4.75px 4.75px 0px ' +
       clr[18] +
-      ', 20px 20px 0px ' +
+      ', 5px 5px 0px ' +
       clr[19] +
       ''
 
@@ -523,5 +523,5 @@ export function rainbow(textNode) {
     } else {
       i = 1
     }
-  }, 25)
+  }, 40)
 }

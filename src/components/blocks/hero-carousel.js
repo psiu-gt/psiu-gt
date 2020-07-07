@@ -29,13 +29,14 @@ class HeroCarousel extends React.Component {
 
     // Set the rainbow text effect to the title.
     const node = ReactDOM.findDOMNode(this)
-    const titleText = node.querySelector('#title')
+    const titleText = node.querySelector('#co-ed')
     rainbow(titleText)
   }
 
   render() {
     return (
       <section className="hero is-large full-hero has-carousel">
+        <div className="slider-overlay"></div>
         <div className="hero-carousel">
           <div className="has-background is-active">
             <img
@@ -66,15 +67,14 @@ class HeroCarousel extends React.Component {
           </div>
         </div>
         <div className="hero-body has-text-centered hero-carousel-text">
-          <h1
-            className="title has-text is-1 font-white turbo-big-title"
-            id="title"
-          >
+          <h1 className="title has-text is-1 font-white" id="title">
             {this.props.block.title}
           </h1>
           {this.props.block.subtitle && (
-            <p className="subtitle is-4 font-white">
-              {this.props.block.subtitle}
+            <p id="subtitle" className="subtitle is-4 font-white">
+              {/* {this.props.block.subtitle} */}
+              Georgia Tech's Premiere Social <span id="co-ed">Co-Ed</span>
+              Fraternity
             </p>
           )}
         </div>

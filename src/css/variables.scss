@@ -4,6 +4,8 @@
 $psiu-garnett: #a32638;
 $psiu-gold: #f2b300;
 
+$hero-body-padding-large: 15rem 1.5rem;
+
 // Override Bulma styles.
 $primary: $psiu-garnett;
 $primary-invert: findColorInvert($psiu-garnett);
