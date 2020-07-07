@@ -1,0 +1,85 @@
+@import 'variables.scss';
+@import 'bulma';
+@import 'bulma-carousel';
+
+@font-face {
+  font-family: 'Sofia';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sofia'), local('Sofia-Regular'),
+    url(https://fonts.gstatic.com/s/sofia/v6/oaUCX3qxbFquHE4Y8j_kMqCWcynf_cDxXwCLxiixG1c.woff)
+      format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC,
+    U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+body {
+  background-image: url(./bg.png);
+  background-repeat: repeat;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 50em;
+}
+
+.content {
+  font-size: 1.2rem;
+}
+
+.page-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70em;
+  padding-bottom: 6rem;
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.navbar-shadow {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+}
+
+.hero-carousel-text {
+  color: #fff;
+}
+
+.slider-navigation-previous {
+  visibility: hidden;
+}
+
+.slider-navigation-next {
+  visibility: hidden;
+}
+
+.has-background {
+  height: 100%;
+}
+
+.full-hero {
+  height: calc(100vh - 52px);
+}
+
+.font-white {
+  color: white;
+}
+
+.turbo-big-title {
+  font-size: 80px !important;
+  font-family: 'Sofia', cursive;
+}
+
+.article-header {
+  margin-bottom: 2.4rem;
+  .title {
+    margin-bottom: 0;
+  }
+}
+
+.block-feature img {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.columns.is-reversed {
+  flex-direction: row-reverse;
+}

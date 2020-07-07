@@ -1,0 +1,11 @@
+@import 'bulma/sass/utilities/functions.sass';
+
+// @todo Get the actual color codes.
+$psiu-garnett: #a32638;
+$psiu-gold: #f2b300;
+
+// Override Bulma styles.
+$primary: $psiu-garnett;
+$primary-invert: findColorInvert($psiu-garnett);
+$secondary: $psiu-gold;
+$secondary-invert: findColorInvert($psiu-gold);

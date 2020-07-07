@@ -1,0 +1,28 @@
+---
+label: Site Config
+hide_body: false
+fields:
+- name: pathPrefix
+  label: Pathprefix
+  type: text
+  hidden: false
+  default: ''
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: description
+  label: Description
+  type: textarea
+  hidden: false
+  default: ''
+- name: footer
+  label: Footer
+  type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: inline_html
+  hidden: false
+  default: ''

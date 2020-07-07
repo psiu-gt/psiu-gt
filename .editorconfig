@@ -1,0 +1,21 @@
+# This file is a common code style configuration
+# that *should* work across editors.
+# Read more at http://editorconfig.org
+
+# This file is the top-most editorconfig file.
+root = true
+
+# All files
+[*]
+charset = utf-8
+end_of_line = lf
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+max_line_length = 80
+
+# Markdown files
+[*.md]
+insert_final_newline = false
+trim_trailing_whitespace = false

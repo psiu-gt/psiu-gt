@@ -1,0 +1,51 @@
+{
+  "name": "psiu-web",
+  "description": "Psi Upsilon Gamma Tau Website",
+  "version": "0.0.1",
+  "author": "Drake Witt",
+  "dependencies": {
+    "@forestryio/gatsby-remark-normalize-paths": "^1.0.0",
+    "bulma": "^0.9.0",
+    "bulma-carousel": "^4.0.4",
+    "gatsby": "^2.23.9",
+    "gatsby-image": "^2.4.8",
+    "gatsby-plugin-catch-links": "^2.3.6",
+    "gatsby-plugin-feed": "^2.5.6",
+    "gatsby-plugin-google-analytics": "^2.3.5",
+    "gatsby-plugin-manifest": "^2.4.13",
+    "gatsby-plugin-offline": "^3.2.12",
+    "gatsby-plugin-react-helmet": "^3.3.5",
+    "gatsby-plugin-sass": "^2.3.5",
+    "gatsby-plugin-sharp": "^2.6.13",
+    "gatsby-remark-copy-linked-files": "^2.3.6",
+    "gatsby-remark-images": "^3.3.12",
+    "gatsby-source-filesystem": "^2.3.13",
+    "gatsby-transformer-json": "^2.4.6",
+    "gatsby-transformer-remark": "^2.8.18",
+    "gatsby-transformer-sharp": "^2.5.6",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "forestry:preview": "gatsby develop -p 8080 -H 0.0.0.0",
+    "forestry:publish": "gatsby build --prefix-paths",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psiu-gt/psiu-web"
+  }
+}
