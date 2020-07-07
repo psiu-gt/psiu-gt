@@ -1,5 +1,7 @@
 # psiu-web
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/80f9b837-7ec4-4acd-b3fd-511fb49cdf6a/deploy-status)](https://app.netlify.com/sites/psiu-staging/deploys)
+
 The website for the Gamma Tau chapter of the Psi Upsilon fraternity.
 
 This README is a work in progress and will be updated with information on
