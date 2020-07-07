@@ -12,11 +12,21 @@
   {
     "type": "internal",
     "url": "/",
-    "title": "nav 2"
+    "title": "Events"
   },
   {
     "type": "internal",
     "url": "/",
-    "title": "nav 3"
+    "title": "Outreach"
+  },
+  {
+    "type": "internal",
+    "url": "/",
+    "title": "Rush"
+  },
+  {
+    "type": "internal",
+    "url": "/",
+    "title": "Contact Us"
   }
 ]
