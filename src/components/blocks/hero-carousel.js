@@ -29,7 +29,7 @@ class HeroCarousel extends React.Component {
 
     // Set the rainbow text effect to the title.
     const node = ReactDOM.findDOMNode(this)
-    const titleText = node.querySelector('#co-ed')
+    const titleText = node.querySelector('#inclusive')
     rainbow(titleText)
   }
 
@@ -73,7 +73,7 @@ class HeroCarousel extends React.Component {
           {this.props.block.subtitle && (
             <p id="subtitle" className="subtitle is-4 font-white">
               {/* {this.props.block.subtitle} */}
-              Georgia Tech's Premiere Social <span id="co-ed">Co-Ed</span>
+              Georgia Tech's Premiere Social <span id="inclusive">Gender Inclusive</span>
               Fraternity
             </p>
           )}

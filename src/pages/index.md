@@ -5,7 +5,7 @@ blocks:
 - template: block__hero_carousel
   component: hero_carousel
   title: Unto us has befallen a mighty friendship.
-  subtitle: Georgia Tech's Only Co-Ed Social Fraternity
+  subtitle: Georgia Tech's Only Gender Inclusive Social Fraternity
   sliderImage1: "/src/images/74894431_2477036679058312_1161275362026455040_o.jpg"
   sliderImage2: "/src/images/52611666_2035704626524855_1608638210685009920_o.jpg"
   sliderImage3: "/src/images/61837021_2168595399902443_273092102491996160_n.png"
