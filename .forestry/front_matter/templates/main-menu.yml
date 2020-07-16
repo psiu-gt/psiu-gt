@@ -6,6 +6,13 @@ fields:
   label: Main menu
   type: field_group_list
   fields:
+  - name: test
+    type: text
+    config:
+      required: false
+    label: test
+    hidden: false
+    description: asdfsadf
   - name: url
     label: Url
     type: text
@@ -30,11 +37,3 @@ fields:
   default: ''
   config:
     labelField: title
-- name: submenu
-  type: field_group_list
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: Sub Menu
-  description: Navigation items nested under the root menu.
