@@ -15,3 +15,8 @@ fields:
   - type: text
     name: title
     label: title
+  - name: asdf
+    type: text
+    config:
+      required: false
+    label: asdf
