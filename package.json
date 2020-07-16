@@ -17,7 +17,7 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sass": "^2.3.5",
     "gatsby-plugin-sharp": "^2.6.13",
-    "gatsby-remark-copy-linked-files": "^2.3.6",
+    "gatsby-remark-copy-linked-files": "^2.3.11",
     "gatsby-remark-images": "^3.3.12",
     "gatsby-source-filesystem": "^2.3.19",
     "gatsby-transformer-json": "^2.4.6",
