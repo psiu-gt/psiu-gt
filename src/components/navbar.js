@@ -82,10 +82,7 @@ class Navbar extends Component {
                         className="navbar-item has-dropdown is-hoverable"
                         key={edge.node.id}
                       >
-                        <a
-                          className="navbar-link"
-                          href="https://bulma.io/documentation/overview/start/"
-                        >
+                        <a className="navbar-link" href={edge.node.url}>
                           {edge.node.title}
                         </a>
                         <div className="navbar-dropdown is-boxed">
