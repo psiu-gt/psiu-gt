@@ -7,17 +7,78 @@
   {
     "type": "internal",
     "url": "/about-us",
-    "title": "About Us"
+    "title": "About Us",
+    "submenu": [
+      {
+        "type": "internal",
+        "url": "/gamma-tau-chapter",
+        "title": "Gamma Tau Chapter"
+      },
+      {
+        "type": "internal",
+        "url": "/our-history",
+        "title": "Our History"
+      },
+      {
+        "type": "internal",
+        "url": "/gamma-tau-chapter",
+        "title": "Our Brothers"
+      },
+      {
+        "type": "external",
+        "url": "https://psiu.org/",
+        "title": "Psi Upsilon International"
+      }
+    ]
   },
   {
     "type": "internal",
     "url": "/",
-    "title": "Events"
+    "title": "Events",
+    "submenu": [
+      {
+        "type": "internal",
+        "url": "/gamma-tau-chapter",
+        "title": "Gamma Tau Chapter"
+      },
+      {
+        "type": "internal",
+        "url": "/our-history",
+        "title": "Our History"
+      },
+      {
+        "type": "internal",
+        "url": "/gamma-tau-chapter",
+        "title": "Our Brothers"
+      },
+      {
+        "type": "external",
+        "url": "https://psiu.org/",
+        "title": "Psi Upsilon International"
+      }
+    ]
+  },
+  {
+    "type": "external",
+    "url": "http://www.pusog.org/",
+    "title": "Alumni"
   },
   {
     "type": "internal",
     "url": "/",
-    "title": "Outreach"
+    "title": "Outreach",
+    "submenu": [
+      {
+        "type": "internal",
+        "url": "/philanthropy",
+        "title": "Philanthropy"
+      },
+      {
+        "type": "internal",
+        "url": "/news",
+        "title": "News"
+      }
+    ]
   },
   {
     "type": "internal",

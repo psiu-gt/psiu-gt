@@ -62,6 +62,11 @@ class Navbar extends Component {
                         type
                         url
                         title
+                        submenu {
+                          type
+                          url
+                          title
+                        }
                       }
                     }
                   }
@@ -69,6 +74,37 @@ class Navbar extends Component {
               `}
               render={(data) =>
                 data.allMainMenuJson.edges.map((edge) => {
+                  console.log(edge)
+                  if (edge.node.submenu) {
+                    // edge.node.submenu.map((menuItem) => {
+                    return (
+                      <div
+                        className="navbar-item has-dropdown is-hoverable"
+                        key={edge.node.id}
+                      >
+                        <a
+                          className="navbar-link"
+                          href="https://bulma.io/documentation/overview/start/"
+                        >
+                          {edge.node.title}
+                        </a>
+                        <div className="navbar-dropdown is-boxed">
+                          {edge.node.submenu.map((menuItem, index) => {
+                            return (
+                              <Link
+                                key={index}
+                                to={menuItem.url}
+                                className="navbar-item"
+                              >
+                                {menuItem.title}
+                              </Link>
+                            )
+                          })}
+                        </div>
+                      </div>
+                    )
+                  }
+
                   return edge.node.type === 'internal' ? (
                     <Link
                       key={edge.node.id}
