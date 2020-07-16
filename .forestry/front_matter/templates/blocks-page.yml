@@ -20,5 +20,4 @@ fields:
   - block__3col
   - block__cta
 pages:
-- src/pages/calendar.md
 - src/pages/index.md
