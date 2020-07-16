@@ -1,6 +1,7 @@
 ---
 template: blocks
 title: Calendar
-blocks: []
-
+blocks:
+  - template: block__calendar
+    component: calendar
 ---

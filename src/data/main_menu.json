@@ -38,12 +38,12 @@
     "submenu": [
       {
         "type": "internal",
-        "url": "/gamma-tau-chapter",
+        "url": "/calendar",
         "title": "Calendar"
       },
       {
         "type": "internal",
-        "url": "/our-history",
+        "url": "/photos",
         "title": "Photo Gallery"
       }
     ]

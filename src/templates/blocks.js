@@ -7,10 +7,12 @@ import Layout from '../components/layout'
 
 // import blocks
 import ThreeCol from '../components/blocks/3col'
+
 import Feature from '../components/blocks/feature'
 import CTA from '../components/blocks/cta'
 import Hero from '../components/blocks/hero'
 import HeroCarousel from '../components/blocks/hero-carousel'
+import Calendar from '../components/blocks/calendar'
 
 class BlocksTemplate extends React.Component {
   render() {
@@ -37,6 +39,8 @@ class BlocksTemplate extends React.Component {
               return <Hero block={block} key={index} />
             case 'hero_carousel':
               return <HeroCarousel block={block} key={index} />
+            case 'calendar':
+              return <Calendar key={index} />
             default:
               return ''
           }
