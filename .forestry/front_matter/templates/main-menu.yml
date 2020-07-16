@@ -30,3 +30,11 @@ fields:
   default: ''
   config:
     labelField: title
+- name: submenu
+  type: field_group_list
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Sub Menu
+  description: Navigation items nested under the root menu.
