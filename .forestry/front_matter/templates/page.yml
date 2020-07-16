@@ -7,3 +7,4 @@ fields:
   label: Title
 pages:
 - src/pages/about-us.md
+- src/pages/our-brothers.md
