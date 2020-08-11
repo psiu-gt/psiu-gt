@@ -57,6 +57,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
+              pathFields: ['image', 'cover'],
               maxWidth: 800,
             },
           },
