@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
 body {
   background-image: url(./bg.png);
@@ -29,7 +31,8 @@ body {
 }
 
 .navbar-shadow {
-  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  // box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  box-shadow: 0 2px 4px -2px rgba(32, 33, 36, 0.5);
 }
 
 .hero-carousel-text {
@@ -78,7 +81,19 @@ body {
 #title {
   text-shadow: 0 1px 0 black;
   font-family: 'Mr De Haviland', cursive;
-  font-size: 5rem;
+  font-size: 7rem;
+}
+
+/** Styles for mobile devices. */
+@media (max-width: 1025px) {
+  #title {
+    font-size: 4rem;
+  }
+
+  #landing-hero {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 #subtitle {
@@ -97,4 +112,24 @@ body {
 
 #inclusive {
   padding-right: 7px;
+}
+
+#landing-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#navbar-logo {
+  max-height: 44px;
+}
+
+#psiu-brand {
+  font-size: 1.8em;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.lato-font {
+  font-family: 'Lato' !important;
 }

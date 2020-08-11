@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
 import { graphql, StaticQuery } from 'gatsby'
+import NavbarLogo from './navbar-logo'
 
 class Navbar extends Component {
   state = {
@@ -22,10 +23,14 @@ class Navbar extends Component {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <Link className="navbar-item has-text-weight-semibold" to="/">
-            {this.props.siteTitle}
-          </Link>
-
+          <a
+            id="psiu-brand"
+            className="navbar-item has-text-weight-semibold"
+            href="/"
+          >
+            <NavbarLogo></NavbarLogo>
+            &Psi;&Upsilon;
+          </a>
           <span
             onClick={this.toggleNavState}
             onKeyDown={this.toggleNavState}
@@ -74,12 +79,10 @@ class Navbar extends Component {
               `}
               render={(data) =>
                 data.allMainMenuJson.edges.map((edge) => {
-                  console.log(edge)
                   if (edge.node.submenu) {
-                    // edge.node.submenu.map((menuItem) => {
                     return (
                       <div
-                        className="navbar-item has-dropdown is-hoverable"
+                        className="navbar-item lato-font has-dropdown is-hoverable"
                         key={edge.node.id}
                       >
                         <a className="navbar-link" href={edge.node.url}>
@@ -106,14 +109,14 @@ class Navbar extends Component {
                     <Link
                       key={edge.node.id}
                       to={edge.node.url}
-                      className="navbar-item"
+                      className="navbar-item lato-font"
                     >
                       {edge.node.title}
                     </Link>
                   ) : (
                     <a
                       key={edge.node.id}
-                      className="navbar-item"
+                      className="navbar-item lato-font"
                       target="_blank"
                       rel="noopener noreferrer"
                       href={edge.node.url}
