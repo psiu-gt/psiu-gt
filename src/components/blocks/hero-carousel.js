@@ -66,14 +66,18 @@ class HeroCarousel extends React.Component {
             />
           </div>
         </div>
-        <div className="hero-body has-text-centered hero-carousel-text">
+        <div
+          className="hero-body has-text-centered hero-carousel-text"
+          id="landing-hero"
+        >
           <h1 className="title has-text is-1 font-white" id="title">
             {this.props.block.title}
           </h1>
           {this.props.block.subtitle && (
             <p id="subtitle" className="subtitle is-4 font-white">
               {/* {this.props.block.subtitle} */}
-              Georgia Tech's Premiere Social <span id="inclusive">Gender Inclusive</span>
+              Georgia Tech's Premiere Social{' '}
+              <span id="inclusive">Gender Inclusive</span>
               Fraternity
             </p>
           )}
