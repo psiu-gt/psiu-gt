@@ -9,23 +9,15 @@ sections:
 - type: document
   path: src/pages/index.md
   label: Home
-  match: "**/*"
 - type: document
   path: src/pages/about-us.md
   label: About Us
-  match: "**/*"
-- type: document
-  path: src/pages/calendar.md
-  label: Calendar
-  match: "**/*"
 - type: document
   path: src/pages/outreach.md
   label: Outreach
-  match: "**/*"
 - type: document
   path: src/pages/contact-us.md
   label: Contact Us
-  match: "**/*"
 - type: directory
   path: src/pages
   label: All Pages
