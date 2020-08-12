@@ -31,7 +31,7 @@ blocks:
     background: info
     title: Rush Psi U!
     button:
-      url: https://www.youtube.com/watch?v=oHg5SJYRHA0
+      url: https://rush.psiugt.org
       text: Rush Website
     subtitle: ''
 ---
