@@ -6,23 +6,35 @@ webhook_url:
 sections:
 - type: heading
   label: Content
+- type: document
+  path: src/pages/index.md
+  label: Home
+  match: "**/*"
+- type: document
+  path: src/pages/about-us.md
+  label: About Us
+  match: "**/*"
+- type: document
+  path: src/pages/calendar.md
+  label: Calendar
+  match: "**/*"
+- type: document
+  path: src/pages/outreach.md
+  label: Outreach
+  match: "**/*"
+- type: document
+  path: src/pages/contact-us.md
+  label: Contact Us
+  match: "**/*"
 - type: directory
   path: src/pages
-  label: Pages
+  label: All Pages
   create: documents
   match: "*.md"
   new_doc_ext: md
   templates:
   - page
   - blocks-page
-- type: directory
-  path: src/pages/posts
-  label: Posts
-  create: documents
-  match: "**/*"
-  new_doc_ext: md
-  templates:
-  - post
 - type: heading
   label: Config
 - type: document
