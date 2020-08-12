@@ -12,7 +12,7 @@ const ThreeCol = ({ block }) => (
             <hr />
           </>
         )}
-        <div className="columns">
+        {/* <div className="columns">
           <div className="column">
             <Column columnData={block.col1} />
           </div>
@@ -22,7 +22,7 @@ const ThreeCol = ({ block }) => (
           <div className="column">
             <Column columnData={block.col3} />
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   </section>
