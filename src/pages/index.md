@@ -25,28 +25,13 @@ blocks:
     peruse our social media to see all of our crazy events and then stop by our house
     (831 Techwood Drive NW) and play on our arcade cabinets, join in on a game of
     Smash, jam out on the porch, or just observe our strange behavior.<br>'
-- template: block__3col
-  component: 3col
-  title: 3 Column Block
-  col1:
-    title: col 1
-    content: content
-    image: "/src/images/placeholder.jpg"
-  col2:
-    title: col 2
-    content: content
-    image: "/src/images/placeholder.jpg"
-  col3:
-    title: col 3
-    content: content
-    image: "/src/images/placeholder.jpg"
 - template: block__cta
   component: cta
   background: primary
-  title: Call to action
-  subtitle: call to action subtitle
+  title: Rush Psi U!
   button:
-    url: "/"
+    url: https://www.youtube.com/watch?v=oHg5SJYRHA0
     text: button
+  subtitle: ''
 
 ---
