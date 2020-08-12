@@ -1,28 +1,32 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
 - type: heading
   label: Content
+- type: document
+  path: src/pages/index.md
+  label: Home
+- type: document
+  path: src/pages/about-us.md
+  label: About Us
+- type: document
+  path: src/pages/outreach.md
+  label: Outreach
+- type: document
+  path: src/pages/contact-us.md
+  label: Contact Us
 - type: directory
   path: src/pages
-  label: Pages
+  label: All Pages
   create: documents
   match: "*.md"
   new_doc_ext: md
   templates:
   - page
   - blocks-page
-- type: directory
-  path: src/pages/posts
-  label: Posts
-  create: documents
-  match: "**/*"
-  new_doc_ext: md
-  templates:
-  - post
 - type: heading
   label: Config
 - type: document

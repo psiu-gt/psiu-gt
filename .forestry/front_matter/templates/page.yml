@@ -7,6 +7,9 @@ fields:
   label: Title
 pages:
 - src/pages/about-us.md
+- src/pages/about-us.md
 - src/pages/calendar.md
 - src/pages/contact-us.md
+- src/pages/contact-us.md
+- src/pages/outreach.md
 - src/pages/outreach.md

@@ -76,7 +76,7 @@ class HeroCarousel extends React.Component {
           {this.props.block.subtitle && (
             <p id="subtitle" className="subtitle is-4 font-white">
               {/* {this.props.block.subtitle} */}
-              Georgia Tech's Premiere Social{' '}
+              Georgia Tech's Premier Social{' '}
               <span id="inclusive">Gender Inclusive</span>
               Fraternity
             </p>
