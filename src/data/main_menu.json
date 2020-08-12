@@ -11,18 +11,8 @@
     "submenu": [
       {
         "type": "internal",
-        "url": "/gamma-tau-chapter",
-        "title": "Gamma Tau Chapter"
-      },
-      {
-        "type": "internal",
-        "url": "/our-history",
-        "title": "Our History"
-      },
-      {
-        "type": "internal",
-        "url": "/our-brothers",
-        "title": "Our Brothers"
+        "url": "/about-us",
+        "title": "About Us"
       },
       {
         "type": "external",
@@ -43,7 +33,7 @@
       },
       {
         "type": "internal",
-        "url": "/photos",
+        "url": "https://www.instagram.com/gtpsiu",
         "title": "Photo Gallery"
       }
     ]
@@ -55,29 +45,17 @@
   },
   {
     "type": "internal",
-    "url": "/",
-    "title": "Outreach",
-    "submenu": [
-      {
-        "type": "internal",
-        "url": "/philanthropy",
-        "title": "Philanthropy"
-      },
-      {
-        "type": "internal",
-        "url": "/news",
-        "title": "News"
-      }
-    ]
+    "url": "/outreach",
+    "title": "Outreach"
   },
   {
-    "type": "internal",
-    "url": "/",
+    "type": "external",
+    "url": "https://rush.psiugt.org",
     "title": "Rush"
   },
   {
     "type": "internal",
-    "url": "/",
+    "url": "/contact-us",
     "title": "Contact Us"
   }
 ]

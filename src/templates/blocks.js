@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 // eslint-disable-next-line
-import { Link, graphql } from 'gatsby'
+import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
 
@@ -83,18 +83,6 @@ export const pageQuery = graphql`
           button {
             url
             text
-          }
-          col1 {
-            title
-            content
-          }
-          col2 {
-            title
-            content
-          }
-          col3 {
-            title
-            content
           }
           sliderImage1 {
             childImageSharp {

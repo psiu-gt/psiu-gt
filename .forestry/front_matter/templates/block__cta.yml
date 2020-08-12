@@ -23,6 +23,7 @@ fields:
     - primary
     - dark
     - light
+    - info
   label: Background
   default: transparent
 - type: field_group

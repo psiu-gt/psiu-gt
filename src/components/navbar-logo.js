@@ -4,7 +4,7 @@ import { graphql, StaticQuery } from 'gatsby'
 const NavbarLogo = () => (
   <StaticQuery
     query={graphql`
-      query {
+      query LogoUrl {
         file(relativePath: { eq: "owl.svg" }) {
           publicURL
         }
