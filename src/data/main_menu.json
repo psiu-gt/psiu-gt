@@ -11,18 +11,8 @@
     "submenu": [
       {
         "type": "internal",
-        "url": "/gamma-tau-chapter",
-        "title": "Gamma Tau Chapter"
-      },
-      {
-        "type": "internal",
-        "url": "/our-history",
-        "title": "Our History"
-      },
-      {
-        "type": "internal",
-        "url": "/our-brothers",
-        "title": "Our Brothers"
+        "url": "/about-us",
+        "title": "About Us"
       },
       {
         "type": "external",
