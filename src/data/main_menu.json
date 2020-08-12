@@ -33,7 +33,7 @@
       },
       {
         "type": "internal",
-        "url": "/photos",
+        "url": "https://www.instagram.com/gtpsiu",
         "title": "Photo Gallery"
       }
     ]
@@ -45,29 +45,17 @@
   },
   {
     "type": "internal",
-    "url": "/",
-    "title": "Outreach",
-    "submenu": [
-      {
-        "type": "internal",
-        "url": "/philanthropy",
-        "title": "Philanthropy"
-      },
-      {
-        "type": "internal",
-        "url": "/news",
-        "title": "News"
-      }
-    ]
+    "url": "/outreach",
+    "title": "Outreach"
   },
   {
-    "type": "internal",
-    "url": "/",
+    "type": "external",
+    "url": "https://www.youtube.com/watch?v=oHg5SJYRHA0",
     "title": "Rush"
   },
   {
     "type": "internal",
-    "url": "/",
+    "url": "/contact-us",
     "title": "Contact Us"
   }
 ]
