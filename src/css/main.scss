@@ -1,6 +1,8 @@
 @import 'variables.scss';
 @import 'bulma';
 @import 'bulma-carousel';
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import 'bulma-social/bin/bulma-social.min';
 
 @import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
@@ -132,4 +134,14 @@ body {
 
 .lato-font {
   font-family: 'Lato' !important;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8px;
+
+  a {
+    margin: 0 4px 0 4px;
+  }
 }
