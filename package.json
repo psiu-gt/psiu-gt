@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "author": "Drake Witt",
   "dependencies": {
-    "gatsby-remark-relative-images": "^0.2.2",
+    "gatsby-remark-relative-images": "^0.3.0",
     "bulma": "^0.9.0",
     "bulma-carousel": "^4.0.4",
     "bulma-social": "^1.2.0",
