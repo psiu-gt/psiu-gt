@@ -9,6 +9,7 @@ sections:
   label: News Posts
   create: documents
   match: "**/*"
+  exclude: index.md
   templates:
   - post
 - type: heading
