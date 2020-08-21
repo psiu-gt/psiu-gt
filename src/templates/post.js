@@ -4,14 +4,12 @@ import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 
 import Layout from '../components/layout'
-import PostList from '../components/post-list'
 
-class ListTemplate extends React.Component {
+class PostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteDescription = post.excerpt
-    const childPosts = this.props.pageContext.children
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -21,16 +19,25 @@ class ListTemplate extends React.Component {
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <section className="section page-content">
-          <div class="container article-header has-text-centered">
-            <h1 class="title is-1">{post.frontmatter.title}</h1>
+          <div className="container article-header has-text-centered">
+            <img src={this.props.data.topLogo.publicURL} />
+            <img
+              className="cogwheel"
+              src={this.props.data.cogwheel.publicURL}
+            />
+            <h1 className="title is-1">{post.frontmatter.title}</h1>
+            {post.frontmatter.date && (
+              <em className="is-size-6 has-text-grey">
+                {post.frontmatter.date}
+              </em>
+            )}
+            <hr />
           </div>
           <main className="container content-container">
             <div
               className="content"
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
-            <hr />
-            <PostList posts={childPosts} />
           </main>
         </section>
       </Layout>
@@ -38,10 +45,10 @@ class ListTemplate extends React.Component {
   }
 }
 
-export default ListTemplate
+export default PostTemplate
 
 export const pageQuery = graphql`
-  query ListPageBySlug($slug: String!) {
+  query PostPageBySlug($slug: String!) {
     site {
       siteMetadata {
         title
@@ -55,6 +62,12 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
       }
+    }
+    topLogo: file(relativePath: { eq: "toplogo.png" }) {
+      publicURL
+    }
+    cogwheel: file(relativePath: { eq: "cogwheelbreak.png" }) {
+      publicURL
     }
   }
 `
