@@ -1,6 +1,11 @@
 [
   {
     "type": "internal",
+    "url": "/posts/",
+    "title": "News"
+  },
+  {
+    "type": "internal",
     "url": "/",
     "title": "Home"
   },
