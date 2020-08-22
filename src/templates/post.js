@@ -20,9 +20,13 @@ class PostTemplate extends React.Component {
         />
         <section className="section page-content">
           <div className="container article-header has-text-centered">
-            <img src={this.props.data.topLogo.publicURL} />
+            <img
+              alt="Psi Upsilon Header"
+              src={this.props.data.topLogo.publicURL}
+            />
             <img
               className="cogwheel"
+              alt="Article divider"
               src={this.props.data.cogwheel.publicURL}
             />
             <h1 className="title is-1">{post.frontmatter.title}</h1>
