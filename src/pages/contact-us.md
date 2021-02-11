@@ -4,6 +4,6 @@ title: Contact Us
 ---
 ### President
 
-Randall Kliman
+Luca Bonini
 
-[rkliman3@gatech.edu](mailto:rkliman3@gatech.edu)
+[luca.bonini1273@gmail.com](mailto:luca.bonini1273@gmail.com)
