@@ -4,6 +4,14 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: directory
+  path: src/pages/posts
+  label: News Posts
+  create: documents
+  match: "**/*"
+  exclude: index.md
+  templates:
+  - post
 - type: heading
   label: Content
 - type: document

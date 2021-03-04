@@ -20,6 +20,7 @@ fields:
   - block__3col
   - block__cta
   - block__calendar
+  - block__news
 pages:
 - src/pages/index.md
 - src/pages/index.md

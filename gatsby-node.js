@@ -6,6 +6,10 @@ function isIndexPage(post) {
   return path.basename(post.node.fileAbsolutePath) === 'index.md'
 }
 
+function isNewsPost(post) {
+  return post.node.fileAbsolutePath.includes('/src/pages/posts/')
+}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
@@ -13,6 +17,7 @@ exports.createPages = ({ graphql, actions }) => {
     const templates = {
       list: path.resolve('./src/templates/list.js'),
       single: path.resolve('./src/templates/single.js'),
+      post: path.resolve('./src/templates/post.js'),
       blocks: path.resolve('./src/templates/blocks.js'),
     }
     resolve(
@@ -78,6 +83,9 @@ exports.createPages = ({ graphql, actions }) => {
             templateComponent = templates[post.node.frontmatter.template]
           } else if (isIndexPage(post)) {
             templateComponent = templates.list
+          } else if (isNewsPost(post)) {
+            // For posts within /src/pages/posts, use the news post template.
+            templateComponent = templates.post
           } else {
             templateComponent = templates.single
           }

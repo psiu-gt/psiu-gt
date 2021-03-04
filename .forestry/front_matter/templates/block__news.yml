@@ -1,0 +1,28 @@
+---
+label: block__news
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: component
+  label: component
+  default: cta
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: subtitle
+  label: Subtitle
+- type: select
+  name: background
+  config:
+    source:
+      type: simple
+    options:
+    - transparent
+    - primary
+    - dark
+    - light
+    - info
+  label: Background
+  default: transparent

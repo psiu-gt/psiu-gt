@@ -1,5 +1,5 @@
 ---
-title: 'Home Page'
+title: Home Page
 template: blocks
 blocks:
   - template: block__hero_carousel
@@ -26,9 +26,14 @@ blocks:
       peruse our social media to see all of our crazy events and then stop by our house
       (831 Techwood Drive NW) and play on our arcade cabinets, join in on a game of
       Smash, jam out on the porch, or just observe our strange behavior.<br>'
+  - template: block__news
+    component: news
+    background: info
+    title: Latest News
+    subtitle: ''
   - template: block__cta
     component: cta
-    background: info
+    background: primary
     title: Rush Psi U!
     button:
       url: https://rush.psiugt.org

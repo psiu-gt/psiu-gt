@@ -13,6 +13,7 @@ import CTA from '../components/blocks/cta'
 import Hero from '../components/blocks/hero'
 import HeroCarousel from '../components/blocks/hero-carousel'
 import Calendar from '../components/blocks/calendar'
+import News from '../components/blocks/news'
 
 class BlocksTemplate extends React.Component {
   render() {
@@ -41,6 +42,8 @@ class BlocksTemplate extends React.Component {
               return <HeroCarousel block={block} key={index} />
             case 'calendar':
               return <Calendar key={index} />
+            case 'news':
+              return <News block={block} key={index} />
             default:
               return ''
           }
