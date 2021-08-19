@@ -36,7 +36,7 @@ blocks:
     background: primary
     title: Rush Psi U!
     button:
-      url: https://rush.psiugt.org
+      url: https://rush.psiugt.com
       text: Rush Website
     subtitle: ''
 ---
