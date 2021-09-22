@@ -5,7 +5,7 @@
   "author": "Drake Witt",
   "dependencies": {
     "bulma": "^0.9.3",
-    "bulma-carousel": "^4.0.4",
+    "bulma-carousel": "^4.0.24",
     "bulma-social": "^1.2.0",
     "gatsby": "^2.32.3",
     "gatsby-cli": "^2.19.1",
