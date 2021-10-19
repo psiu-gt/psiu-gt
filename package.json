@@ -6,7 +6,7 @@
   "dependencies": {
     "bulma": "^0.9.3",
     "bulma-carousel": "^4.0.24",
-    "bulma-social": "^1.2.0",
+    "bulma-social": "^2.0.0",
     "gatsby": "^2.32.13",
     "gatsby-cli": "^2.19.3",
     "gatsby-image": "^3.11.0",
