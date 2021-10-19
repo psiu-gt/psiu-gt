@@ -8,7 +8,7 @@
     "bulma-carousel": "^4.0.24",
     "bulma-social": "^2.0.0",
     "gatsby": "^2.32.13",
-    "gatsby-cli": "^2.19.3",
+    "gatsby-cli": "^3.14.2",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-catch-links": "^2.10.0",
     "gatsby-plugin-feed": "^2.13.1",
