@@ -11,7 +11,7 @@ blocks:
     sliderImage3: '/src/images/61837021_2168595399902443_273092102491996160_n.png'
   - template: block__feature
     component: feature
-    image: '/src/images/69691063_2332798893482092_8088634500361224192_o.jpg'
+    image: '/src/images/homepage2.jpg'
     background: primary
     orientation: reverse
     title: '"Individual standards, not standard individuals."'
