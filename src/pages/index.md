@@ -11,7 +11,7 @@ blocks:
   sliderImage3: "/src/images/psiupsilon3.jpg"
 - template: block__feature
   component: feature
-  image: "/src/images/homepage2.jpg"
+  image: "/src/images/dd11aa5d-3f79-436c-a117-d78a9332f7de.jpeg"
   background: primary
   orientation: reverse
   title: '"Individual standards, not standard individuals."'
