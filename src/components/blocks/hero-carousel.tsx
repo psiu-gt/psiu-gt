@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { rainbow } from "../../scripts/rainbow";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 // See https://github.com/Wikiki/bulma-carousel/issues/76
 const bulmaCarousel = (() => {
@@ -10,6 +11,10 @@ const bulmaCarousel = (() => {
 
 const HeroCarousel = ({ block }: { block: any }) => {
   const rainbowRef = useRef<HTMLDivElement>(null);
+
+  const sliderImage1 = getImage(block.sliderImage1);
+  const sliderImage2 = getImage(block.sliderImage2);
+  const sliderImage3 = getImage(block.sliderImage3);
 
   useEffect(() => {
     bulmaCarousel.attach(".hero-carousel", {
@@ -42,25 +47,31 @@ const HeroCarousel = ({ block }: { block: any }) => {
       <div className="slider-overlay"></div>
       <div className="hero-carousel">
         <div className="has-background is-active">
-          <img
-            className="is-background"
-            srcSet={block.sliderImage1.childImageSharp.fluid.srcSet}
-            alt=""
-          />
+          {sliderImage1 && (
+            <GatsbyImage
+              alt=""
+              className="is-background"
+              image={sliderImage1}
+            />
+          )}
         </div>
         <div className="has-background">
-          <img
-            className="is-background"
-            srcSet={block.sliderImage2.childImageSharp.fluid.srcSet}
-            alt=""
-          />
+          {sliderImage2 && (
+            <GatsbyImage
+              alt=""
+              className="is-background"
+              image={sliderImage2}
+            />
+          )}
         </div>
         <div className="has-background">
-          <img
-            className="is-background"
-            srcSet={block.sliderImage3.childImageSharp.fluid.srcSet}
-            alt=""
-          />
+          {sliderImage3 && (
+            <GatsbyImage
+              alt=""
+              className="is-background"
+              image={sliderImage3}
+            />
+          )}
         </div>
       </div>
       <div

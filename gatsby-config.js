@@ -30,6 +30,7 @@ module.exports = {
         name: "data",
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -40,7 +41,6 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              pathFields: ["image", "cover"],
               maxWidth: 800,
             },
           },

@@ -68,9 +68,7 @@ export const pageQuery = graphql`
           component
           image {
             childImageSharp {
-              fluid(maxWidth: 800) {
-                srcSet
-              }
+              gatsbyImageData(width: 800)
             }
           }
           title
@@ -84,23 +82,20 @@ export const pageQuery = graphql`
           }
           sliderImage1 {
             childImageSharp {
-              fluid(maxWidth: 800) {
-                srcSet
-              }
+              gatsbyImageData(width: 800)
+              # fluid(maxWidth: 800) {
+              #   srcSet
+              # }
             }
           }
           sliderImage2 {
             childImageSharp {
-              fluid(maxWidth: 800) {
-                srcSet
-              }
+              gatsbyImageData(width: 800)
             }
           }
           sliderImage3 {
             childImageSharp {
-              fluid(maxWidth: 800) {
-                srcSet
-              }
+              gatsbyImageData(width: 800)
             }
           }
         }
