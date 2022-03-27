@@ -12,46 +12,41 @@ import Feature from "../components/blocks/feature";
 import CTA from "../components/blocks/cta";
 import Hero from "../components/blocks/hero";
 import HeroCarousel from "../components/blocks/hero-carousel";
-import Calendar from "../components/blocks/calendar";
 import News from "../components/blocks/news";
 
-class BlocksTemplate extends React.Component {
-  render() {
-    const post = (this.props as any).data.markdownRemark;
-    const siteTitle = (this.props as any).data.site.siteMetadata.title;
-    const siteDescription = post.excerpt;
+const BlocksTemplate = ({ data }: { data: any }) => {
+  const post = data.markdownRemark;
+  const siteTitle = data.site.siteMetadata.title;
+  const siteDescription = post.excerpt;
 
-    return (
-      <Layout>
-        <Helmet
-          htmlAttributes={{ lang: "en" }}
-          meta={[{ name: "description", content: siteDescription }]}
-          title={`${post.frontmatter.title} | ${siteTitle}`}
-        />
-        {post.frontmatter.blocks.map((block: any, index: any) => {
-          switch (block.component) {
-            case "3col":
-              return <ThreeCol block={block} key={index} />;
-            case "feature":
-              return <Feature block={block} key={index} />;
-            case "cta":
-              return <CTA block={block} key={index} />;
-            case "hero":
-              return <Hero block={block} key={index} />;
-            case "hero_carousel":
-              return <HeroCarousel block={block} key={index} />;
-            case "calendar":
-              return <Calendar key={index} />;
-            case "news":
-              return <News block={block} key={index} />;
-            default:
-              return "";
-          }
-        })}
-      </Layout>
-    );
-  }
-}
+  return (
+    <Layout>
+      <Helmet
+        htmlAttributes={{ lang: "en" }}
+        meta={[{ name: "description", content: siteDescription }]}
+        title={`${post.frontmatter.title} | ${siteTitle}`}
+      />
+      {post.frontmatter.blocks.map((block: any, index: any) => {
+        switch (block.component) {
+          case "3col":
+            return <ThreeCol block={block} key={index} />;
+          case "feature":
+            return <Feature block={block} key={index} />;
+          case "cta":
+            return <CTA block={block} key={index} />;
+          case "hero":
+            return <Hero block={block} key={index} />;
+          case "hero_carousel":
+            return <HeroCarousel block={block} key={index} />;
+          case "news":
+            return <News block={block} key={index} />;
+          default:
+            return "";
+        }
+      })}
+    </Layout>
+  );
+};
 
 export default BlocksTemplate;
 
