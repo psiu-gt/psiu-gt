@@ -8,9 +8,9 @@
  * @todo(dwitt): Make more elegant and readable.
  * @param {!HTMLElement} textNode
  */
-export function rainbow(textNode) {
+export function rainbow(textNode: any) {
   let i = 1
-  let clr = []
+  let clr: any = []
 
   setInterval(() => {
     if (i === 1) {

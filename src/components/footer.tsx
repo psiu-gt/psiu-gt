@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = ({ content }) => (
+const Footer = ({ content }: any) => (
   <footer className="section site-footer">
     <div className="social-icons is-centered">
       <a

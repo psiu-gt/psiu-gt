@@ -3,10 +3,11 @@ import React from 'react'
 
 import Navbar from './navbar'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle }: any) => (
   <header className="site-header">
     <section className="navigation">
-      <Navbar siteTitle={siteTitle} />
+      {/* <Navbar siteTitle={siteTitle} /> */}
+      <Navbar />
     </section>
   </header>
 )

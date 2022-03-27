@@ -8,21 +8,21 @@ import PostList from '../components/post-list'
 
 class ListTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const post = (this.props as any).data.markdownRemark
+    const siteTitle = (this.props as any).data.site.siteMetadata.title
     const siteDescription = post.excerpt
-    const childPosts = this.props.pageContext.children
+    const childPosts = (this.props as any).pageContext.children
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
         <Helmet
-          htmlAttribute={{ lang: 'en' }}
+          htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <section className="section page-content">
-          <div class="container article-header has-text-centered">
-            <h1 class="title is-1">{post.frontmatter.title}</h1>
+          <div className="container article-header has-text-centered">
+            <h1 className="title is-1">{post.frontmatter.title}</h1>
           </div>
           <main className="container content-container">
             <div

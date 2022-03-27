@@ -9,7 +9,7 @@ import '../css/main.scss'
 
 import favicon from './favicon.png'
 
-const Layout = ({ children }) => (
+const Layout = ({ children }: { children: React.ReactNode }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {

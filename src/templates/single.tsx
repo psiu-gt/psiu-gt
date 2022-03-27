@@ -7,14 +7,14 @@ import Layout from '../components/layout'
 
 class SingleTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const post = (this.props as any).data.markdownRemark
+    const siteTitle = (this.props as any).data.site.siteMetadata.title
     const siteDescription = post.excerpt
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
         <Helmet
-          htmlAttribute={{ lang: 'en' }}
+          htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Feature = ({ block }) => (
+const Feature = ({ block }: any) => (
   <section
     className={
       block.background

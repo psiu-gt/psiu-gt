@@ -7,14 +7,14 @@ import Layout from '../components/layout'
 
 class PostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const post = (this.props as any).data.markdownRemark
+    const siteTitle = (this.props as any).data.site.siteMetadata.title
     const siteDescription = post.excerpt
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout>
         <Helmet
-          htmlAttribute={{ lang: 'en' }}
+          htmlAttributes={{ lang: 'en' }}
           meta={[{ name: 'description', content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
@@ -22,12 +22,12 @@ class PostTemplate extends React.Component {
           <div className="container article-header has-text-centered">
             <img
               alt="Psi Upsilon Header"
-              src={this.props.data.topLogo.publicURL}
+              src={(this.props as any).data.topLogo.publicURL}
             />
             <img
               className="cogwheel"
               alt="Article divider"
-              src={this.props.data.cogwheel.publicURL}
+              src={(this.props as any).data.cogwheel.publicURL}
             />
             <h1 className="title is-1">{post.frontmatter.title}</h1>
             {post.frontmatter.date && (

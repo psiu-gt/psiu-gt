@@ -1,8 +1,6 @@
 import React from 'react'
 
-import Column from './inc/column'
-
-const ThreeCol = ({ block }) => (
+const ThreeCol = ({ block }: any) => (
   <section className="block-3col hero is-medium">
     <div className="hero-body">
       <div className="container section page-content">

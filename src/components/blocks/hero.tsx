@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hero = ({ block }) => (
+const Hero = ({ block }: any) => (
   <section
     className={
       block.background

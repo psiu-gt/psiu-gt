@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import PostList from '../post-list'
 
-const News = ({ block }) => (
+const News = ({ block }: any) => (
   <section
     className={
       block.background

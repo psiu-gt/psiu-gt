@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CTA = ({ block }) => (
+const CTA = ({ block }: any) => (
   <section
     className={
       block.background

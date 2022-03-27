@@ -8,7 +8,7 @@ const Calendar = () => (
       style={{ border: 0 }}
       width="800"
       height="600"
-      frameborder="0"
+      // frameborder="0"
       scrolling="no"
     ></iframe>
     <iframe
@@ -17,7 +17,7 @@ const Calendar = () => (
       style={{ border: 0 }}
       width="800"
       height="600"
-      frameborder="0"
+      // frameborder="0"
       scrolling="no"
     ></iframe>
   </React.Fragment>

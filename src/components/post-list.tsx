@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const PostList = ({ posts }) => {
+const PostList = ({ posts }: any) => {
   return (
     <section className="post-list">
-      {posts.map(({ node }) => (
+      {posts.map(({ node }: any) => (
         <div key={node.fields.slug} className="post box">
           <h2 className="subtitle is-3 is-marginless">
             {node.frontmatter.title}

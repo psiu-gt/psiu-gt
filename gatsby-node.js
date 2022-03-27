@@ -15,10 +15,10 @@ exports.createPages = ({ graphql, actions }) => {
 
   return new Promise((resolve, reject) => {
     const templates = {
-      list: path.resolve('./src/templates/list.js'),
-      single: path.resolve('./src/templates/single.js'),
-      post: path.resolve('./src/templates/post.js'),
-      blocks: path.resolve('./src/templates/blocks.js'),
+      list: path.resolve('./src/templates/list.tsx'),
+      single: path.resolve('./src/templates/single.tsx'),
+      post: path.resolve('./src/templates/post.tsx'),
+      blocks: path.resolve('./src/templates/blocks.tsx'),
     }
     resolve(
       // query for markdown files
