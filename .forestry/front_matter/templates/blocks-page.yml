@@ -19,7 +19,6 @@ fields:
       - block__feature
       - block__3col
       - block__cta
-      - block__calendar
       - block__news
 pages:
   - src/pages/index.md
