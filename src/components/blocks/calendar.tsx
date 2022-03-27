@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Calendar = () => (
   <React.Fragment>
@@ -21,6 +21,6 @@ const Calendar = () => (
       scrolling="no"
     ></iframe>
   </React.Fragment>
-)
+);
 
-export default Calendar
+export default Calendar;

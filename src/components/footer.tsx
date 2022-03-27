@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Footer = ({ content }: any) => (
   <footer className="section site-footer">
@@ -33,6 +33,6 @@ const Footer = ({ content }: any) => (
       dangerouslySetInnerHTML={{ __html: content }}
     />
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

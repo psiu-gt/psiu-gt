@@ -1,5 +1,5 @@
-import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
+import React from "react";
+import { graphql, StaticQuery } from "gatsby";
 
 const NavbarLogo = () => (
   <StaticQuery
@@ -14,6 +14,6 @@ const NavbarLogo = () => (
       <img id="navbar-logo" src={data.file.publicURL} alt="Psi Upsilon Owl" />
     )}
   />
-)
+);
 
-export default NavbarLogo
+export default NavbarLogo;

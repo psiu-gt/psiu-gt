@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const ThreeCol = ({ block }: any) => (
   <section className="block-3col hero is-medium">
@@ -24,6 +24,6 @@ const ThreeCol = ({ block }: any) => (
       </div>
     </div>
   </section>
-)
+);
 
-export default ThreeCol
+export default ThreeCol;

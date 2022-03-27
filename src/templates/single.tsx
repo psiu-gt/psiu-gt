@@ -1,21 +1,21 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from "react";
+import Helmet from "react-helmet";
 // eslint-disable-next-line
-import { Link, graphql } from 'gatsby'
+import { Link, graphql } from "gatsby";
 
-import Layout from '../components/layout'
+import Layout from "../components/layout";
 
 class SingleTemplate extends React.Component {
   render() {
-    const post = (this.props as any).data.markdownRemark
-    const siteTitle = (this.props as any).data.site.siteMetadata.title
-    const siteDescription = post.excerpt
+    const post = (this.props as any).data.markdownRemark;
+    const siteTitle = (this.props as any).data.site.siteMetadata.title;
+    const siteDescription = post.excerpt;
 
     return (
       <Layout>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          htmlAttributes={{ lang: "en" }}
+          meta={[{ name: "description", content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <section className="section page-content">
@@ -36,11 +36,11 @@ class SingleTemplate extends React.Component {
           </main>
         </section>
       </Layout>
-    )
+    );
   }
 }
 
-export default SingleTemplate
+export default SingleTemplate;
 
 export const pageQuery = graphql`
   query SinglePageBySlug($slug: String!) {
@@ -59,4 +59,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

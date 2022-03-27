@@ -1,13 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import { rainbow } from '../../scripts/rainbow'
+import React from "react";
+import ReactDOM from "react-dom";
+import { rainbow } from "../../scripts/rainbow";
 
 // See https://github.com/Wikiki/bulma-carousel/issues/76
 const bulmaCarousel = (() => {
-  if (typeof window !== 'undefined') {
-    return require('bulma-carousel')
+  if (typeof window !== "undefined") {
+    return require("bulma-carousel");
   }
-})()
+})();
 
 class HeroCarousel extends React.Component {
   /**
@@ -16,21 +16,21 @@ class HeroCarousel extends React.Component {
    * @override
    */
   componentDidMount() {
-    bulmaCarousel.attach('.hero-carousel', {
+    bulmaCarousel.attach(".hero-carousel", {
       slidesToScroll: 1,
       slidesToShow: 1,
-      effect: 'fade',
+      effect: "fade",
       navigation: true,
       pagination: true,
       loop: true,
       autoplay: true,
       autoplaySpeed: 6000,
-    })
+    });
 
     // Set the rainbow text effect to the title.
-    const node = ReactDOM.findDOMNode(this)
-    const titleText = node.querySelector('#inclusive')
-    rainbow(titleText)
+    const node = ReactDOM.findDOMNode(this);
+    const titleText = node.querySelector("#inclusive");
+    rainbow(titleText);
   }
 
   render() {
@@ -76,15 +76,15 @@ class HeroCarousel extends React.Component {
           {this.props.block.subtitle && (
             <p id="subtitle" className="subtitle is-4 font-white">
               {/* {this.props.block.subtitle} */}
-              Georgia Tech's Premier Social{' '}
+              Georgia Tech's Premier Social{" "}
               <span id="inclusive">Gender Inclusive</span>
               Fraternity
             </p>
           )}
         </div>
       </section>
-    )
+    );
   }
 }
 
-export default HeroCarousel
+export default HeroCarousel;

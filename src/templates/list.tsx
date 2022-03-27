@@ -1,23 +1,23 @@
-import React from 'react'
-import Helmet from 'react-helmet'
+import React from "react";
+import Helmet from "react-helmet";
 // eslint-disable-next-line
-import { Link, graphql } from 'gatsby'
+import { Link, graphql } from "gatsby";
 
-import Layout from '../components/layout'
-import PostList from '../components/post-list'
+import Layout from "../components/layout";
+import PostList from "../components/post-list";
 
 class ListTemplate extends React.Component {
   render() {
-    const post = (this.props as any).data.markdownRemark
-    const siteTitle = (this.props as any).data.site.siteMetadata.title
-    const siteDescription = post.excerpt
-    const childPosts = (this.props as any).pageContext.children
+    const post = (this.props as any).data.markdownRemark;
+    const siteTitle = (this.props as any).data.site.siteMetadata.title;
+    const siteDescription = post.excerpt;
+    const childPosts = (this.props as any).pageContext.children;
 
     return (
       <Layout>
         <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
+          htmlAttributes={{ lang: "en" }}
+          meta={[{ name: "description", content: siteDescription }]}
           title={`${post.frontmatter.title} | ${siteTitle}`}
         />
         <section className="section page-content">
@@ -34,11 +34,11 @@ class ListTemplate extends React.Component {
           </main>
         </section>
       </Layout>
-    )
+    );
   }
 }
 
-export default ListTemplate
+export default ListTemplate;
 
 export const pageQuery = graphql`
   query ListPageBySlug($slug: String!) {
@@ -57,4 +57,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

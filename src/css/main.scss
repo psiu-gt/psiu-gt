@@ -1,17 +1,17 @@
-@import 'variables.scss';
-@import 'bulma';
-@import 'bulma-carousel';
-@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import "variables.scss";
+@import "bulma";
+@import "bulma-carousel";
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 // @import 'bulma-social/bin/bulma-social.min';
-@import 'bulma-social/css/single/facebook/facebook.min';
-@import 'bulma-social/css/single/instagram/instagram.min';
-@import 'bulma-social/css/single/twitter/twitter.min';
-@import 'bulma-timeline/dist/css/bulma-timeline';
+@import "bulma-social/css/single/facebook/facebook.min";
+@import "bulma-social/css/single/instagram/instagram.min";
+@import "bulma-social/css/single/twitter/twitter.min";
+@import "bulma-timeline/dist/css/bulma-timeline";
 
-@import url('https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
 
 body {
   background-image: url(./bg.png);
@@ -86,7 +86,7 @@ body {
 
 #title {
   text-shadow: 0 1px 0 black;
-  font-family: 'Mr De Haviland', cursive;
+  font-family: "Mr De Haviland", cursive;
   font-size: 7rem;
 }
 
@@ -104,7 +104,7 @@ body {
 
 #subtitle {
   text-shadow: 0 1px 0 black;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.85rem;
 }
 
@@ -137,7 +137,7 @@ body {
 }
 
 .lato-font {
-  font-family: 'Lato' !important;
+  font-family: "Lato" !important;
 }
 
 .social-icons {

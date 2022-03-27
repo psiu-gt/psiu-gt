@@ -1,14 +1,14 @@
-import React from 'react'
-import { StaticQuery, graphql } from 'gatsby'
+import React from "react";
+import { StaticQuery, graphql } from "gatsby";
 
-import PostList from '../post-list'
+import PostList from "../post-list";
 
 const News = ({ block }: any) => (
   <section
     className={
       block.background
         ? `hero is-medium has-text-centered is-${block.background}`
-        : 'hero is-medium has-text-centered'
+        : "hero is-medium has-text-centered"
     }
   >
     <div className="hero-body">
@@ -49,6 +49,6 @@ const News = ({ block }: any) => (
       </div>
     </div>
   </section>
-)
+);
 
-export default News
+export default News;

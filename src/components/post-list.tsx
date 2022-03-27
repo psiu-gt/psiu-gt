@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react";
+import { Link } from "gatsby";
 
 const PostList = ({ posts }: any) => {
   return (
@@ -19,7 +19,7 @@ const PostList = ({ posts }: any) => {
         </div>
       ))}
     </section>
-  )
-}
+  );
+};
 
-export default PostList
+export default PostList;

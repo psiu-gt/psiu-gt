@@ -1,19 +1,19 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
+import React, { Component } from "react";
+import { Link } from "gatsby";
 
-import { graphql, StaticQuery } from 'gatsby'
-import NavbarLogo from './navbar-logo'
+import { graphql, StaticQuery } from "gatsby";
+import NavbarLogo from "./navbar-logo";
 
 class Navbar extends Component {
   state = {
     navbarOpen: false,
-  }
+  };
 
   toggleNavState = () => {
     this.setState({
       navbarOpen: !this.state.navbarOpen,
-    })
-  }
+    });
+  };
 
   render() {
     return (
@@ -38,8 +38,8 @@ class Navbar extends Component {
             role="button"
             className={
               this.state.navbarOpen
-                ? 'navbar-burger burger is-active'
-                : 'navbar-burger burger'
+                ? "navbar-burger burger is-active"
+                : "navbar-burger burger"
             }
             aria-label="menu"
             aria-expanded="false"
@@ -53,7 +53,7 @@ class Navbar extends Component {
         <div
           id="mainMenu"
           className={
-            this.state.navbarOpen ? 'navbar-menu is-active' : 'navbar-menu'
+            this.state.navbarOpen ? "navbar-menu is-active" : "navbar-menu"
           }
         >
           <div className="navbar-start">
@@ -98,14 +98,14 @@ class Navbar extends Component {
                               >
                                 {menuItem.title}
                               </Link>
-                            )
+                            );
                           })}
                         </div>
                       </div>
-                    )
+                    );
                   }
 
-                  return edge.node.type === 'internal' ? (
+                  return edge.node.type === "internal" ? (
                     <Link
                       key={edge.node.id}
                       to={edge.node.url}
@@ -123,15 +123,15 @@ class Navbar extends Component {
                     >
                       {edge.node.title}
                     </a>
-                  )
+                  );
                 })
               }
             />
           </div>
         </div>
       </nav>
-    )
+    );
   }
 }
 
-export default Navbar
+export default Navbar;

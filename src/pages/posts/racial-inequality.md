@@ -24,32 +24,32 @@ The fight for justice and real change has only just begun. Here’s our challeng
 
 **Protest and Anti-Racist Resources**
 
-[https://blacklivesmatter.com/](https://blacklivesmatter.com/ 'https://blacklivesmatter.com/') - Black Lives Matter movement home page containing petitions to sign and a place to donate
+[https://blacklivesmatter.com/](https://blacklivesmatter.com/ "https://blacklivesmatter.com/") - Black Lives Matter movement home page containing petitions to sign and a place to donate
 
-[https://blacklivesmatters.carrd.co/](https://blacklivesmatters.carrd.co/ 'https://blacklivesmatters.carrd.co/') - "Ways you can help" master doc. Stay informed
+[https://blacklivesmatters.carrd.co/](https://blacklivesmatters.carrd.co/ "https://blacklivesmatters.carrd.co/") - "Ways you can help" master doc. Stay informed
 
-[https://www.joincampaignzero.org/](https://www.joincampaignzero.org/ 'https://www.joincampaignzero.org/') - Contains a lot of good information on reform policy and links to where you can contact your state representatives
+[https://www.joincampaignzero.org/](https://www.joincampaignzero.org/ "https://www.joincampaignzero.org/") - Contains a lot of good information on reform policy and links to where you can contact your state representatives
 
-[https://actionnetwork.org/fundraising/support-justiceforgeorgefloyd-protesters-in-atlanta](https://actionnetwork.org/fundraising/support-justiceforgeorgefloyd-protesters-in-atlanta 'https://actionnetwork.org/fundraising/support-justiceforgeorgefloyd-protesters-in-atlanta') - Bail fund for people protesters in Atlanta
+[https://actionnetwork.org/fundraising/support-justiceforgeorgefloyd-protesters-in-atlanta](https://actionnetwork.org/fundraising/support-justiceforgeorgefloyd-protesters-in-atlanta "https://actionnetwork.org/fundraising/support-justiceforgeorgefloyd-protesters-in-atlanta") - Bail fund for people protesters in Atlanta
 
-[https://www.youtube.com/watch?v=bCgLa25fDHM](https://www.youtube.com/watch?v=bCgLa25fDHM 'https://www.youtube.com/watch?v=bCgLa25fDHM') - This is one example of Youtube videos where the ad revenue from them goes to helping BLM. Make sure if you watch them you actually have AdBlocker off. You can look up ‘stream to donate’ to find some more.
+[https://www.youtube.com/watch?v=bCgLa25fDHM](https://www.youtube.com/watch?v=bCgLa25fDHM "https://www.youtube.com/watch?v=bCgLa25fDHM") - This is one example of Youtube videos where the ad revenue from them goes to helping BLM. Make sure if you watch them you actually have AdBlocker off. You can look up ‘stream to donate’ to find some more.
 
-[https://atlsolidarity.org/](https://atlsolidarity.org/ 'https://atlsolidarity.org/') - Bail fund and support for protesters that have been jailed
+[https://atlsolidarity.org/](https://atlsolidarity.org/ "https://atlsolidarity.org/") - Bail fund and support for protesters that have been jailed
 
-[https://secure.givelively.org/donate/the-bail-project](https://secure.givelively.org/donate/the-bail-project 'https://secure.givelively.org/donate/the-bail-project') - A national bail fund similar to the one above
+[https://secure.givelively.org/donate/the-bail-project](https://secure.givelively.org/donate/the-bail-project "https://secure.givelively.org/donate/the-bail-project") - A national bail fund similar to the one above
 
-[https://docs.google.com/spreadsheets/d/1A3f-20SipegLlS2D-D8JRpJd2IBGmN7eKdfRB6cJHwY/htmlview](https://docs.google.com/spreadsheets/d/1A3f-20SipegLlS2D-D8JRpJd2IBGmN7eKdfRB6cJHwY/htmlview 'https://docs.google.com/spreadsheets/d/1A3f-20SipegLlS2D-D8JRpJd2IBGmN7eKdfRB6cJHwY/htmlview') - Spreadsheet with a bunch of bail, fundraising, petitions, and trans resources websites for specific cities.
+[https://docs.google.com/spreadsheets/d/1A3f-20SipegLlS2D-D8JRpJd2IBGmN7eKdfRB6cJHwY/htmlview](https://docs.google.com/spreadsheets/d/1A3f-20SipegLlS2D-D8JRpJd2IBGmN7eKdfRB6cJHwY/htmlview "https://docs.google.com/spreadsheets/d/1A3f-20SipegLlS2D-D8JRpJd2IBGmN7eKdfRB6cJHwY/htmlview") - Spreadsheet with a bunch of bail, fundraising, petitions, and trans resources websites for specific cities.
 
-[https://docs.google.com/document/d/1H-Vxs6jEUByXylMS2BjGH1kQ7mEuZnHpPSs1Bpaqmw0/preview?pru=AAABcp1ULNk](https://docs.google.com/document/d/1H-Vxs6jEUByXylMS2BjGH1kQ7mEuZnHpPSs1Bpaqmw0/preview?pru=AAABcp1ULNk 'https://docs.google.com/document/d/1H-Vxs6jEUByXylMS2BjGH1kQ7mEuZnHpPSs1Bpaqmw0/preview?pru=AAABcp1ULNk')[\*-ehcVEPtvSdUliMeDz46gQ#heading=h.bz6xi12lobgw](https://docs.google.com/document/d/1H-Vxs6jEUByXylMS2BjGH1kQ7mEuZnHpPSs1Bpaqmw0/preview?pru=AAABcp1ULNk*-ehcVEPtvSdUliMeDz46gQ#heading=h.bz6xi12lobgw) - Reading list for educating yourself on the Black struggle in America, and recognize your own privilege and biases.
+[https://docs.google.com/document/d/1H-Vxs6jEUByXylMS2BjGH1kQ7mEuZnHpPSs1Bpaqmw0/preview?pru=AAABcp1ULNk](https://docs.google.com/document/d/1H-Vxs6jEUByXylMS2BjGH1kQ7mEuZnHpPSs1Bpaqmw0/preview?pru=AAABcp1ULNk "https://docs.google.com/document/d/1H-Vxs6jEUByXylMS2BjGH1kQ7mEuZnHpPSs1Bpaqmw0/preview?pru=AAABcp1ULNk")[\*-ehcVEPtvSdUliMeDz46gQ#heading=h.bz6xi12lobgw](https://docs.google.com/document/d/1H-Vxs6jEUByXylMS2BjGH1kQ7mEuZnHpPSs1Bpaqmw0/preview?pru=AAABcp1ULNk*-ehcVEPtvSdUliMeDz46gQ#heading=h.bz6xi12lobgw) - Reading list for educating yourself on the Black struggle in America, and recognize your own privilege and biases.
 
-[https://docs.google.com/document/u/0/d/1PrAq4iBNb4nVIcTsLcNlW8zjaQXBLkWayL8EaPlh0bc/mobilebasic](https://docs.google.com/document/u/0/d/1PrAq4iBNb4nVIcTsLcNlW8zjaQXBLkWayL8EaPlh0bc/mobilebasic 'https://docs.google.com/document/u/0/d/1PrAq4iBNb4nVIcTsLcNlW8zjaQXBLkWayL8EaPlh0bc/mobilebasic') - Another good list of anti-racist resources and readings
+[https://docs.google.com/document/u/0/d/1PrAq4iBNb4nVIcTsLcNlW8zjaQXBLkWayL8EaPlh0bc/mobilebasic](https://docs.google.com/document/u/0/d/1PrAq4iBNb4nVIcTsLcNlW8zjaQXBLkWayL8EaPlh0bc/mobilebasic "https://docs.google.com/document/u/0/d/1PrAq4iBNb4nVIcTsLcNlW8zjaQXBLkWayL8EaPlh0bc/mobilebasic") - Another good list of anti-racist resources and readings
 
-[https://www.autostraddle.com/police-and-prison-abolition-101-a-syllabus-and-faq/](https://www.autostraddle.com/police-and-prison-abolition-101-a-syllabus-and-faq/ 'https://www.autostraddle.com/police-and-prison-abolition-101-a-syllabus-and-faq/') - A guide to police defunding and how to fix the broken system
+[https://www.autostraddle.com/police-and-prison-abolition-101-a-syllabus-and-faq/](https://www.autostraddle.com/police-and-prison-abolition-101-a-syllabus-and-faq/ "https://www.autostraddle.com/police-and-prison-abolition-101-a-syllabus-and-faq/") - A guide to police defunding and how to fix the broken system
 
 &nbsp;
 
 **Black/POC LGBTQIA+ Resources/Funds**
 
-[http://nbjc.org/](http://nbjc.org/ 'http://nbjc.org/') - National Black Justice Coalition - a civil rights organization dedicated to empowering Black lesbian, gay, bisexual, and transgender people.
+[http://nbjc.org/](http://nbjc.org/ "http://nbjc.org/") - National Black Justice Coalition - a civil rights organization dedicated to empowering Black lesbian, gay, bisexual, and transgender people.
 
-[https://www.twocc.us/](https://www.twocc.us/ 'https://www.twocc.us/') - Trans Women of Color Collective - donation fund
+[https://www.twocc.us/](https://www.twocc.us/ "https://www.twocc.us/") - Trans Women of Color Collective - donation fund

@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const CTA = ({ block }: any) => (
   <section
     className={
       block.background
         ? `hero is-medium has-text-centered is-${block.background}`
-        : 'hero is-medium has-text-centered'
+        : "hero is-medium has-text-centered"
     }
   >
     <div className="hero-body">
@@ -17,9 +17,9 @@ const CTA = ({ block }: any) => (
           rel="noopener noreferrer"
           className={
             block.background &&
-            (block.background === 'primary' || block.background === 'dark')
-              ? 'button is-primary is-large is-inverted is-outlined'
-              : 'button is-primary is-large'
+            (block.background === "primary" || block.background === "dark")
+              ? "button is-primary is-large is-inverted is-outlined"
+              : "button is-primary is-large"
           }
           href={block.button.url}
         >
@@ -28,6 +28,6 @@ const CTA = ({ block }: any) => (
       </div>
     </div>
   </section>
-)
+);
 
-export default CTA
+export default CTA;

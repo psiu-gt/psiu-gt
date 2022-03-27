@@ -1,12 +1,13 @@
 ---
 title: Outreach
-
 ---
+
 ## Philanthropy/Service
 
 One of Psi Upsilon's core values is "Service to Others" which we espouse through our philanthropy and community service involvement. We believe that society cannot be a better place just through words, but through actions. For this reason, our chapter supports two main organizations: The American Foundation for Suicide Prevention (AFSP) and Atlanta's own Housing Justice League. As well as these two philanthropies, we also participate in a multitude of other philanthropic and service opportunities. Every semester, Psi Upsilon Gamma Tau brothers and members put environmentalist words into action by holding multiple outings to clean up litter along the Atlanta Beltline, specifically in a portion of the West End line adopted by the fraternity and partnered with Park Pride. Other common service opportunities the chapter takes part in includes Action Ministries food box packing events, the Leukemia and Lymphoma Society’s (LLS) Light the Night walks, Food4Life Covid-19 relief specific food packing events/deliveries, as well as local Georgia Tech specific volunteering events. Psi Upsilon Gamma Tau also recognizes that some social issues cannot be fixed just with money or labor, but instead by education and conscious social effort. Every semester, we host presentations by Georgia Tech's VOICE center to educate all of our members about sexual violence. Our goal is to always continue to educate ourselves and strive to create a healthy and inclusive environment for our members as well as in our community.
 
-###   
+###
+
 Official Psi Upsilon Gamma Tau Philanthropies
 
 #### American Foundation for Suicide Prevention
@@ -29,19 +30,19 @@ In the year of 2019, the active brotherhood at Psi Upsilon Gamma Tau reported a 
 
 In the past year, brothers as well as then pledges at Psi Upsilon Gamma Tau have attended/volunteered together at:
 
-* 2/2/2019: Action Ministries food box/meal kit packing event
-* 3/31/2019: Our adopted West End portion of the Atlanta Beltline cleaning trash
-* 4/13/2019: East Atlanta Kids Club’s Easter event
-* Semesterly: VOICE presentations for sexual and relationship violence prevention
-* 4/17/2019: Attended QPR training sessions for suicide crisis response
-* 10/5/2019: Fundraised for/Walked in the LLS’s Light the Night walk
-* 10/27/2019: Our adopted West End portion of the Atlanta Beltline cleaning trash
-* 11/3/2019: Fundraised for/Walked in the AFSP’s Out of the Darkness walk (over $1100 fundraised)
-* 2/27/2020: Rise Against Hunger packing food boxes
-* 3/1/2020: Our adopted West End portion of the Atlanta Beltline cleaning trash
-* Shortly after this date, the Covid-19 pandemic spread in America and classes were moved online, but brothers were encouraged to continue to support their communities locally.
-* 7/26/2020: Food4Life Atlanta Survival Program food box packing event attended by a small group of quarantined brothers living within the Psi Upsilon fraternity house
-* Future Events include:
-* Possible social distanced litter removals along portions of the Atlanta Beltline
-* Virtual fundraising/petition signature events for the Housing Justice League
-* 11/8/2020: Fundraising/participating in a virtual Out of the Darkness walk with the AFSP
+- 2/2/2019: Action Ministries food box/meal kit packing event
+- 3/31/2019: Our adopted West End portion of the Atlanta Beltline cleaning trash
+- 4/13/2019: East Atlanta Kids Club’s Easter event
+- Semesterly: VOICE presentations for sexual and relationship violence prevention
+- 4/17/2019: Attended QPR training sessions for suicide crisis response
+- 10/5/2019: Fundraised for/Walked in the LLS’s Light the Night walk
+- 10/27/2019: Our adopted West End portion of the Atlanta Beltline cleaning trash
+- 11/3/2019: Fundraised for/Walked in the AFSP’s Out of the Darkness walk (over $1100 fundraised)
+- 2/27/2020: Rise Against Hunger packing food boxes
+- 3/1/2020: Our adopted West End portion of the Atlanta Beltline cleaning trash
+- Shortly after this date, the Covid-19 pandemic spread in America and classes were moved online, but brothers were encouraged to continue to support their communities locally.
+- 7/26/2020: Food4Life Atlanta Survival Program food box packing event attended by a small group of quarantined brothers living within the Psi Upsilon fraternity house
+- Future Events include:
+- Possible social distanced litter removals along portions of the Atlanta Beltline
+- Virtual fundraising/petition signature events for the Housing Justice League
+- 11/8/2020: Fundraising/participating in a virtual Out of the Darkness walk with the AFSP

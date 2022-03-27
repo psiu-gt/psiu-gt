@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Hero = ({ block }: any) => (
   <section
     className={
       block.background
         ? `hero is-medium has-text-centered is-${block.background}`
-        : 'hero is-medium has-text-centered'
+        : "hero is-medium has-text-centered"
     }
   >
     <div className="hero-body">
@@ -15,6 +15,6 @@ const Hero = ({ block }: any) => (
       </div>
     </div>
   </section>
-)
+);
 
-export default Hero
+export default Hero;
