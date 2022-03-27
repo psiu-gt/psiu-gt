@@ -54,6 +54,3 @@ updates:
   - dependency-name: gatsby-transformer-sharp
     versions:
     - 2.11.0
-  - dependency-name: gatsby-plugin-offline
-    versions:
-    - 3.9.0
