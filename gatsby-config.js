@@ -87,7 +87,10 @@ module.exports = {
       options: {
         spreadsheetId: process.env.SPREADSHEET_ID,
         worksheetTitle: "data",
-        credentials: JSON.parse(process.env.DRIVE_SERVICE_ACCOUNT),
+        credentials: {
+          ...JSON.parse(process.env.DRIVE_SERVICE_ACCOUNT),
+          private_key: process.env.GOOGLE_PRIVATE_KEY,
+        },
       },
     },
     {
