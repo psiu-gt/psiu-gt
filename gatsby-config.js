@@ -1,4 +1,10 @@
 const config = require("./site-config.json");
+const path = require("path");
+
+require("dotenv").config({
+  path: `.env`,
+  // path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
   pathPrefix: process.env.PATH_PREFIX || "/",
@@ -74,6 +80,26 @@ module.exports = {
         pageTransitionDelay: 0,
         // Defers execution of google analytics script after page load
         defer: false,
+      },
+    },
+    {
+      resolve: "gatsby-source-google-spreadsheets",
+      options: {
+        spreadsheetId: process.env.SPREADSHEET_ID,
+        worksheetTitle: "data",
+        credentials: JSON.parse(process.env.DRIVE_SERVICE_ACCOUNT),
+      },
+    },
+    {
+      resolve: "@fs/gatsby-plugin-drive",
+      options: {
+        folderId: process.env.GOOGLE_DRIVE_FOLDER_ID,
+        key: {
+          private_key: process.env.GOOGLE_PRIVATE_KEY,
+          client_email: process.env.GOOGLE_CLIENT_EMAIL,
+        },
+        destination: path.join(__dirname, "src/images/bros"),
+        pageSize: 100,
       },
     },
     `gatsby-plugin-react-helmet`,
