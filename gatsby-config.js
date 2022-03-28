@@ -9,6 +9,7 @@ module.exports = {
     siteUrl: config.siteUrl,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -28,6 +29,14 @@ module.exports = {
       options: {
         path: `${__dirname}/src/data`,
         name: "data",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/,
+        },
       },
     },
     `gatsby-plugin-image`,
@@ -71,5 +80,6 @@ module.exports = {
     "gatsby-transformer-json",
     "gatsby-plugin-sass",
     "gatsby-plugin-catch-links",
+    "gatsby-plugin-graphql-codegen",
   ],
 };
