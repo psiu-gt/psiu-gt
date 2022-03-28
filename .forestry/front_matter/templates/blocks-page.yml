@@ -2,25 +2,24 @@
 label: Blocks Page
 hide_body: true
 fields:
-- type: text
-  name: title
-  label: Title
-- type: text
-  hidden: true
-  label: Template
-  name: template
-  default: blocks
-- type: blocks
-  name: blocks
-  label: Blocks
-  template_types:
-  - block__hero
-  - block__hero_carousel
-  - block__feature
-  - block__3col
-  - block__cta
-  - block__calendar
-  - block__news
+  - type: text
+    name: title
+    label: Title
+  - type: text
+    hidden: true
+    label: Template
+    name: template
+    default: blocks
+  - type: blocks
+    name: blocks
+    label: Blocks
+    template_types:
+      - block__hero
+      - block__hero_carousel
+      - block__feature
+      - block__3col
+      - block__cta
+      - block__news
 pages:
-- src/pages/index.md
-- src/pages/index.md
+  - src/pages/index.md
+  - src/pages/index.md

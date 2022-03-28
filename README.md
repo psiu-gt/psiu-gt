@@ -11,6 +11,10 @@ building and modifying the site.
 
 Based on https://github.com/forestryio/gatsby-starter-forestry
 
+## Note for Developing on Apple Silicon Devices (M1)
+
+Sharp (image resizing) support is a little borked for ARM. To get it to work, run `brew install vips`.
+
 # License (TODO)
 
 MIT
