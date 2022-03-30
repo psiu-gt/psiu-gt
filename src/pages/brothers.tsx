@@ -6,11 +6,14 @@ import BrotherModal from "../components/brother-modal";
 import BrotherCard from "../components/brother-card";
 
 const Brothers = ({ data }: any) => {
-  const brothers = data.allGoogleDataSheet.nodes
-    // Shuffle the array order
-    .map((value: any) => ({ value, sort: Math.random() }))
-    .sort((a: any, b: any) => a.sort - b.sort)
-    .map(({ value }: any) => value);
+  // Wrap in useState to prevent random order from changing on modal close.
+  const [brothers] = useState(
+    data.allGoogleDataSheet.nodes
+      // Shuffle the array order
+      .map((value: any) => ({ value, sort: Math.random() }))
+      .sort((a: any, b: any) => a.sort - b.sort)
+      .map(({ value }: any) => value)
+  );
   const rows = Math.ceil(brothers.length / 3);
 
   const [selectedBrother, setSelectedBrother] = useState<any>(null);
