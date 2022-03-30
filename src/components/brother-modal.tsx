@@ -1,4 +1,3 @@
-import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
 import styled from "styled-components";
 
@@ -31,7 +30,7 @@ const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
             <div className="content">
               {brother.bio}
               <br />
-              <br />
+              <hr />
               <div>
                 <p>
                   <strong>Brags?</strong>
@@ -53,7 +52,7 @@ const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
                       If I were a superhero, my superpower would be
                     </strong>
                     <br />
-                    {brother.superPower_}
+                    {brother.ifIWereASuperhero_MySuperpowerWouldBe}
                   </p>
                 )}
                 {brother.inAnotherLife_I_mPrettySureIWas && (
@@ -65,7 +64,6 @@ const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
                 )}
                 {brother.asAChild_WhatDidYouWantToBeWhenYouGrewUp_ && (
                   <p>
-                    <br />
                     <strong>
                       As a child, what did you want to be when you grew up?
                     </strong>
@@ -75,7 +73,6 @@ const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
                 )}
                 {brother.youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_ && (
                   <p>
-                    <br />
                     <strong>
                       You instantly become an expert in something, what would it
                       be?
@@ -88,7 +85,6 @@ const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
                 )}
                 {brother.what_sYourFavoriteSandwichAndWhy_ && (
                   <p>
-                    <br />
                     <strong>What’s your favorite sandwich and why?</strong>
                     <br />
                     {brother.what_sYourFavoriteSandwichAndWhy_}

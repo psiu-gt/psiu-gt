@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import { BroImgStyled } from "./brother-modal";
-
 const CardContent = styled.div`
   height: 22em;
   display: flex;
