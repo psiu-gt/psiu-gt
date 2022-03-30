@@ -4,7 +4,10 @@ import styled from "styled-components";
 const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
   return (
     <div id="modal" className={`modal ${isActive ? "is-active" : ""}`}>
-      <div className="modal-background"></div>
+      <div
+        className="modal-background"
+        onClick={() => setIsActive(false)}
+      ></div>
 
       <div className="modal-content">
         <div className="card">
