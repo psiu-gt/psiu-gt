@@ -95,7 +95,7 @@ module.exports = {
             /(\\r)|(\\n)/g,
             "\n"
           ),
-          client_email: process.env.CLIENT_EMAIL,
+          client_email: process.env.GOOGLE_CLIENT_EMAIL,
           client_id: "",
           auth_uri: "https://accounts.google.com/o/oauth2/auth",
           token_uri: "https://oauth2.googleapis.com/token",
@@ -106,7 +106,7 @@ module.exports = {
       },
     },
     {
-      resolve: "@fs/gatsby-plugin-drive",
+      resolve: "gatsby-plugin-drive-fileid",
       options: {
         folderId: process.env.GOOGLE_DRIVE_FOLDER_ID,
         key: {

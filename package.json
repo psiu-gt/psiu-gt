@@ -11,6 +11,7 @@
     "gatsby": "^4.10.3",
     "gatsby-cli": "^4.10.2",
     "gatsby-plugin-catch-links": "^4.10.0",
+    "gatsby-plugin-drive-fileid": "^0.2.2",
     "gatsby-plugin-google-analytics": "^4.10.0",
     "gatsby-plugin-graphql-codegen": "^3.1.1",
     "gatsby-plugin-image": "^2.10.1",
