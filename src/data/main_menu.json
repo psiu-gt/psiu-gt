@@ -23,6 +23,11 @@
   },
   {
     "type": "internal",
+    "url": "/brothers/",
+    "title": "Our Brothers"
+  },
+  {
+    "type": "internal",
     "url": "/posts/",
     "title": "News"
   },
