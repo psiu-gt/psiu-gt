@@ -40,45 +40,70 @@ const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
             <div className="content">
               {brother.bio}
               <br />
-              <p>
+              <br />
+              <div>
                 <p>
+                  <strong>Brags?</strong>
                   <br />
-                  <strong>
-                    As a child, what did you want to be when you grew up?
-                  </strong>
-                  <br />
-
-                  {brother.asAChild_WhatDidYouWantToBeWhenYouGrewUp_}
+                  {brother.brags}
                 </p>
-                <p>
-                  <strong>Psi U Brags?</strong>
-                  <br />
-                  {brother.pSIUBrags}
-                </p>
-                <p>
-                  <strong>What superpower would you have?</strong>
-                  <br />
-                  {brother.superPower_}
-                </p>
-                <p>
-                  <strong>What's your favorite sandwich and why?</strong>
-                  <br />
-                  {brother.what_sYourFavoriteSandwichAndWhy_}
-                </p>
-                <p>
-                  <strong>
-                    If you instantly become an expert in something, what would
-                    it be?
-                  </strong>
-                  <br />
-                  {brother.youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_}
-                </p>
-                <p>
-                  <strong>What's your pro-wrestler enterance theme?</strong>
-                  <br />
-                  {brother.you_reAProWrestlerWhat_sYourEntranceTheme_}
-                </p>
-              </p>
+                {brother.you_reAProWrestlerWhat_sYourEntranceTheme_ && (
+                  <p>
+                    <strong>
+                      You're a Pro Wrestler. What's your entrance theme?
+                    </strong>
+                    <br />
+                    {brother.you_reAProWrestlerWhat_sYourEntranceTheme_}
+                  </p>
+                )}
+                {brother.ifIWereASuperhero_MySuperpowerWouldBe && (
+                  <p>
+                    <strong>
+                      If I were a superhero, my superpower would be
+                    </strong>
+                    <br />
+                    {brother.superPower_}
+                  </p>
+                )}
+                {brother.inAnotherLife_I_mPrettySureIWas && (
+                  <p>
+                    <strong>In another life, I'm pretty sure I was</strong>
+                    <br />
+                    {brother.inAnotherLife_I_mPrettySureIWas}
+                  </p>
+                )}
+                {brother.asAChild_WhatDidYouWantToBeWhenYouGrewUp_ && (
+                  <p>
+                    <br />
+                    <strong>
+                      As a child, what did you want to be when you grew up?
+                    </strong>
+                    <br />
+                    {brother.asAChild_WhatDidYouWantToBeWhenYouGrewUp_}
+                  </p>
+                )}
+                {brother.youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_ && (
+                  <p>
+                    <br />
+                    <strong>
+                      You instantly become an expert in something, what would it
+                      be?
+                    </strong>
+                    <br />
+                    {
+                      brother.youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_
+                    }
+                  </p>
+                )}
+                {brother.what_sYourFavoriteSandwichAndWhy_ && (
+                  <p>
+                    <br />
+                    <strong>What’s your favorite sandwich and why?</strong>
+                    <br />
+                    {brother.what_sYourFavoriteSandwichAndWhy_}
+                  </p>
+                )}
+              </div>
               <br />
             </div>
           </div>

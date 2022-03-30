@@ -67,10 +67,6 @@ export type File = Node & {
   childrenMarkdownRemark?: Maybe<Array<Maybe<MarkdownRemark>>>;
   /** Returns the first child node of type MarkdownRemark or null if there are no children of given type on this node */
   childMarkdownRemark?: Maybe<MarkdownRemark>;
-  /** Returns all children nodes filtered by type OurBrothersJson */
-  childrenOurBrothersJson?: Maybe<Array<Maybe<OurBrothersJson>>>;
-  /** Returns the first child node of type OurBrothersJson or null if there are no children of given type on this node */
-  childOurBrothersJson?: Maybe<OurBrothersJson>;
   /** Returns all children nodes filtered by type MainMenuJson */
   childrenMainMenuJson?: Maybe<Array<Maybe<MainMenuJson>>>;
   /** Returns the first child node of type MainMenuJson or null if there are no children of given type on this node */
@@ -728,17 +724,23 @@ export type GoogleSheet = Node & {
 };
 
 export type GoogleSheetData = {
+  timestamp?: Maybe<Scalars['String']>;
   name?: Maybe<Scalars['String']>;
-  graduationYear?: Maybe<Scalars['String']>;
+  iConsentForMyProfileToAppearOnPsiugtCom?: Maybe<Scalars['String']>;
+  graduationYear?: Maybe<Scalars['Int']>;
   major?: Maybe<Scalars['String']>;
-  coolPicOfYou?: Maybe<Scalars['String']>;
+  picture?: Maybe<Scalars['String']>;
   bio?: Maybe<Scalars['String']>;
-  pSIUBrags?: Maybe<Scalars['String']>;
+  hometown?: Maybe<Scalars['String']>;
+  brags?: Maybe<Scalars['String']>;
   you_reAProWrestlerWhat_sYourEntranceTheme_?: Maybe<Scalars['String']>;
-  superPower_?: Maybe<Scalars['String']>;
+  ifIWereASuperhero_MySuperpowerWouldBe?: Maybe<Scalars['String']>;
+  inAnotherLife_I_mPrettySureIWas?: Maybe<Scalars['String']>;
   asAChild_WhatDidYouWantToBeWhenYouGrewUp_?: Maybe<Scalars['String']>;
   youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_?: Maybe<Scalars['String']>;
   what_sYourFavoriteSandwichAndWhy_?: Maybe<Scalars['String']>;
+  hobbies?: Maybe<Scalars['String']>;
+  pronouns?: Maybe<Scalars['String']>;
   id?: Maybe<Scalars['String']>;
   parent?: Maybe<Scalars['String']>;
   internal?: Maybe<GoogleSheetDataInternal>;
@@ -756,43 +758,23 @@ export type GoogleDataSheet = Node & {
   parent?: Maybe<Node>;
   children: Array<Node>;
   internal: Internal;
+  timestamp?: Maybe<Scalars['String']>;
   name?: Maybe<Scalars['String']>;
-  graduationYear?: Maybe<Scalars['String']>;
+  iConsentForMyProfileToAppearOnPsiugtCom?: Maybe<Scalars['String']>;
+  graduationYear?: Maybe<Scalars['Int']>;
   major?: Maybe<Scalars['String']>;
-  coolPicOfYou?: Maybe<Scalars['String']>;
+  picture?: Maybe<Scalars['String']>;
   bio?: Maybe<Scalars['String']>;
-  pSIUBrags?: Maybe<Scalars['String']>;
+  hometown?: Maybe<Scalars['String']>;
+  brags?: Maybe<Scalars['String']>;
   you_reAProWrestlerWhat_sYourEntranceTheme_?: Maybe<Scalars['String']>;
-  superPower_?: Maybe<Scalars['String']>;
+  ifIWereASuperhero_MySuperpowerWouldBe?: Maybe<Scalars['String']>;
+  inAnotherLife_I_mPrettySureIWas?: Maybe<Scalars['String']>;
   asAChild_WhatDidYouWantToBeWhenYouGrewUp_?: Maybe<Scalars['String']>;
   youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_?: Maybe<Scalars['String']>;
   what_sYourFavoriteSandwichAndWhy_?: Maybe<Scalars['String']>;
-};
-
-export type OurBrothersJson = Node & {
-  id: Scalars['ID'];
-  parent?: Maybe<Node>;
-  children: Array<Node>;
-  internal: Internal;
-  timestamp?: Maybe<Scalars['Date']>;
-  name?: Maybe<Scalars['String']>;
-  major?: Maybe<Scalars['String']>;
-  coolPicOfYou?: Maybe<Scalars['String']>;
-  bio?: Maybe<Scalars['String']>;
-  youreAProWrestlerWhatsYourEntranceTheme?: Maybe<Scalars['String']>;
-  superPower?: Maybe<Scalars['String']>;
-  asAChildWhatDidYouWantToBeWhenYouGrewUp?: Maybe<Scalars['String']>;
-  youInstantlyBecomeAnExpertInSomethingWhatWouldItBe?: Maybe<Scalars['String']>;
-  whatsYourFavoriteSandwichAndWhy?: Maybe<Scalars['String']>;
-  psiUBrags?: Maybe<Scalars['String']>;
-};
-
-
-export type OurBrothersJsonTimestampArgs = {
-  formatString?: InputMaybe<Scalars['String']>;
-  fromNow?: InputMaybe<Scalars['Boolean']>;
-  difference?: InputMaybe<Scalars['String']>;
-  locale?: InputMaybe<Scalars['String']>;
+  hobbies?: Maybe<Scalars['String']>;
+  pronouns?: Maybe<Scalars['String']>;
 };
 
 export type MainMenuJson = Node & {
@@ -835,8 +817,6 @@ export type Query = {
   allGoogleSheet: GoogleSheetConnection;
   googleDataSheet?: Maybe<GoogleDataSheet>;
   allGoogleDataSheet: GoogleDataSheetConnection;
-  ourBrothersJson?: Maybe<OurBrothersJson>;
-  allOurBrothersJson: OurBrothersJsonConnection;
   mainMenuJson?: Maybe<MainMenuJson>;
   allMainMenuJson: MainMenuJsonConnection;
 };
@@ -881,8 +861,6 @@ export type QueryFileArgs = {
   childImageSharp?: InputMaybe<ImageSharpFilterInput>;
   childrenMarkdownRemark?: InputMaybe<MarkdownRemarkFilterListInput>;
   childMarkdownRemark?: InputMaybe<MarkdownRemarkFilterInput>;
-  childrenOurBrothersJson?: InputMaybe<OurBrothersJsonFilterListInput>;
-  childOurBrothersJson?: InputMaybe<OurBrothersJsonFilterInput>;
   childrenMainMenuJson?: InputMaybe<MainMenuJsonFilterListInput>;
   childMainMenuJson?: InputMaybe<MainMenuJsonFilterInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
@@ -1130,50 +1108,29 @@ export type QueryGoogleDataSheetArgs = {
   parent?: InputMaybe<NodeFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
   internal?: InputMaybe<InternalFilterInput>;
+  timestamp?: InputMaybe<StringQueryOperatorInput>;
   name?: InputMaybe<StringQueryOperatorInput>;
-  graduationYear?: InputMaybe<StringQueryOperatorInput>;
+  iConsentForMyProfileToAppearOnPsiugtCom?: InputMaybe<StringQueryOperatorInput>;
+  graduationYear?: InputMaybe<IntQueryOperatorInput>;
   major?: InputMaybe<StringQueryOperatorInput>;
-  coolPicOfYou?: InputMaybe<StringQueryOperatorInput>;
+  picture?: InputMaybe<StringQueryOperatorInput>;
   bio?: InputMaybe<StringQueryOperatorInput>;
-  pSIUBrags?: InputMaybe<StringQueryOperatorInput>;
+  hometown?: InputMaybe<StringQueryOperatorInput>;
+  brags?: InputMaybe<StringQueryOperatorInput>;
   you_reAProWrestlerWhat_sYourEntranceTheme_?: InputMaybe<StringQueryOperatorInput>;
-  superPower_?: InputMaybe<StringQueryOperatorInput>;
+  ifIWereASuperhero_MySuperpowerWouldBe?: InputMaybe<StringQueryOperatorInput>;
+  inAnotherLife_I_mPrettySureIWas?: InputMaybe<StringQueryOperatorInput>;
   asAChild_WhatDidYouWantToBeWhenYouGrewUp_?: InputMaybe<StringQueryOperatorInput>;
   youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_?: InputMaybe<StringQueryOperatorInput>;
   what_sYourFavoriteSandwichAndWhy_?: InputMaybe<StringQueryOperatorInput>;
+  hobbies?: InputMaybe<StringQueryOperatorInput>;
+  pronouns?: InputMaybe<StringQueryOperatorInput>;
 };
 
 
 export type QueryAllGoogleDataSheetArgs = {
   filter?: InputMaybe<GoogleDataSheetFilterInput>;
   sort?: InputMaybe<GoogleDataSheetSortInput>;
-  skip?: InputMaybe<Scalars['Int']>;
-  limit?: InputMaybe<Scalars['Int']>;
-};
-
-
-export type QueryOurBrothersJsonArgs = {
-  id?: InputMaybe<StringQueryOperatorInput>;
-  parent?: InputMaybe<NodeFilterInput>;
-  children?: InputMaybe<NodeFilterListInput>;
-  internal?: InputMaybe<InternalFilterInput>;
-  timestamp?: InputMaybe<DateQueryOperatorInput>;
-  name?: InputMaybe<StringQueryOperatorInput>;
-  major?: InputMaybe<StringQueryOperatorInput>;
-  coolPicOfYou?: InputMaybe<StringQueryOperatorInput>;
-  bio?: InputMaybe<StringQueryOperatorInput>;
-  youreAProWrestlerWhatsYourEntranceTheme?: InputMaybe<StringQueryOperatorInput>;
-  superPower?: InputMaybe<StringQueryOperatorInput>;
-  asAChildWhatDidYouWantToBeWhenYouGrewUp?: InputMaybe<StringQueryOperatorInput>;
-  youInstantlyBecomeAnExpertInSomethingWhatWouldItBe?: InputMaybe<StringQueryOperatorInput>;
-  whatsYourFavoriteSandwichAndWhy?: InputMaybe<StringQueryOperatorInput>;
-  psiUBrags?: InputMaybe<StringQueryOperatorInput>;
-};
-
-
-export type QueryAllOurBrothersJsonArgs = {
-  filter?: InputMaybe<OurBrothersJsonFilterInput>;
-  sort?: InputMaybe<OurBrothersJsonSortInput>;
   skip?: InputMaybe<Scalars['Int']>;
   limit?: InputMaybe<Scalars['Int']>;
 };
@@ -1425,36 +1382,12 @@ export type FileFilterInput = {
   childImageSharp?: InputMaybe<ImageSharpFilterInput>;
   childrenMarkdownRemark?: InputMaybe<MarkdownRemarkFilterListInput>;
   childMarkdownRemark?: InputMaybe<MarkdownRemarkFilterInput>;
-  childrenOurBrothersJson?: InputMaybe<OurBrothersJsonFilterListInput>;
-  childOurBrothersJson?: InputMaybe<OurBrothersJsonFilterInput>;
   childrenMainMenuJson?: InputMaybe<MainMenuJsonFilterListInput>;
   childMainMenuJson?: InputMaybe<MainMenuJsonFilterInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
   parent?: InputMaybe<NodeFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
   internal?: InputMaybe<InternalFilterInput>;
-};
-
-export type OurBrothersJsonFilterListInput = {
-  elemMatch?: InputMaybe<OurBrothersJsonFilterInput>;
-};
-
-export type OurBrothersJsonFilterInput = {
-  id?: InputMaybe<StringQueryOperatorInput>;
-  parent?: InputMaybe<NodeFilterInput>;
-  children?: InputMaybe<NodeFilterListInput>;
-  internal?: InputMaybe<InternalFilterInput>;
-  timestamp?: InputMaybe<DateQueryOperatorInput>;
-  name?: InputMaybe<StringQueryOperatorInput>;
-  major?: InputMaybe<StringQueryOperatorInput>;
-  coolPicOfYou?: InputMaybe<StringQueryOperatorInput>;
-  bio?: InputMaybe<StringQueryOperatorInput>;
-  youreAProWrestlerWhatsYourEntranceTheme?: InputMaybe<StringQueryOperatorInput>;
-  superPower?: InputMaybe<StringQueryOperatorInput>;
-  asAChildWhatDidYouWantToBeWhenYouGrewUp?: InputMaybe<StringQueryOperatorInput>;
-  youInstantlyBecomeAnExpertInSomethingWhatWouldItBe?: InputMaybe<StringQueryOperatorInput>;
-  whatsYourFavoriteSandwichAndWhy?: InputMaybe<StringQueryOperatorInput>;
-  psiUBrags?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type MainMenuJsonFilterListInput = {
@@ -1869,105 +1802,6 @@ export type FileFieldsEnum =
   | 'childMarkdownRemark___internal___mediaType'
   | 'childMarkdownRemark___internal___owner'
   | 'childMarkdownRemark___internal___type'
-  | 'childrenOurBrothersJson'
-  | 'childrenOurBrothersJson___id'
-  | 'childrenOurBrothersJson___parent___id'
-  | 'childrenOurBrothersJson___parent___parent___id'
-  | 'childrenOurBrothersJson___parent___parent___children'
-  | 'childrenOurBrothersJson___parent___children'
-  | 'childrenOurBrothersJson___parent___children___id'
-  | 'childrenOurBrothersJson___parent___children___children'
-  | 'childrenOurBrothersJson___parent___internal___content'
-  | 'childrenOurBrothersJson___parent___internal___contentDigest'
-  | 'childrenOurBrothersJson___parent___internal___description'
-  | 'childrenOurBrothersJson___parent___internal___fieldOwners'
-  | 'childrenOurBrothersJson___parent___internal___ignoreType'
-  | 'childrenOurBrothersJson___parent___internal___mediaType'
-  | 'childrenOurBrothersJson___parent___internal___owner'
-  | 'childrenOurBrothersJson___parent___internal___type'
-  | 'childrenOurBrothersJson___children'
-  | 'childrenOurBrothersJson___children___id'
-  | 'childrenOurBrothersJson___children___parent___id'
-  | 'childrenOurBrothersJson___children___parent___children'
-  | 'childrenOurBrothersJson___children___children'
-  | 'childrenOurBrothersJson___children___children___id'
-  | 'childrenOurBrothersJson___children___children___children'
-  | 'childrenOurBrothersJson___children___internal___content'
-  | 'childrenOurBrothersJson___children___internal___contentDigest'
-  | 'childrenOurBrothersJson___children___internal___description'
-  | 'childrenOurBrothersJson___children___internal___fieldOwners'
-  | 'childrenOurBrothersJson___children___internal___ignoreType'
-  | 'childrenOurBrothersJson___children___internal___mediaType'
-  | 'childrenOurBrothersJson___children___internal___owner'
-  | 'childrenOurBrothersJson___children___internal___type'
-  | 'childrenOurBrothersJson___internal___content'
-  | 'childrenOurBrothersJson___internal___contentDigest'
-  | 'childrenOurBrothersJson___internal___description'
-  | 'childrenOurBrothersJson___internal___fieldOwners'
-  | 'childrenOurBrothersJson___internal___ignoreType'
-  | 'childrenOurBrothersJson___internal___mediaType'
-  | 'childrenOurBrothersJson___internal___owner'
-  | 'childrenOurBrothersJson___internal___type'
-  | 'childrenOurBrothersJson___timestamp'
-  | 'childrenOurBrothersJson___name'
-  | 'childrenOurBrothersJson___major'
-  | 'childrenOurBrothersJson___coolPicOfYou'
-  | 'childrenOurBrothersJson___bio'
-  | 'childrenOurBrothersJson___youreAProWrestlerWhatsYourEntranceTheme'
-  | 'childrenOurBrothersJson___superPower'
-  | 'childrenOurBrothersJson___asAChildWhatDidYouWantToBeWhenYouGrewUp'
-  | 'childrenOurBrothersJson___youInstantlyBecomeAnExpertInSomethingWhatWouldItBe'
-  | 'childrenOurBrothersJson___whatsYourFavoriteSandwichAndWhy'
-  | 'childrenOurBrothersJson___psiUBrags'
-  | 'childOurBrothersJson___id'
-  | 'childOurBrothersJson___parent___id'
-  | 'childOurBrothersJson___parent___parent___id'
-  | 'childOurBrothersJson___parent___parent___children'
-  | 'childOurBrothersJson___parent___children'
-  | 'childOurBrothersJson___parent___children___id'
-  | 'childOurBrothersJson___parent___children___children'
-  | 'childOurBrothersJson___parent___internal___content'
-  | 'childOurBrothersJson___parent___internal___contentDigest'
-  | 'childOurBrothersJson___parent___internal___description'
-  | 'childOurBrothersJson___parent___internal___fieldOwners'
-  | 'childOurBrothersJson___parent___internal___ignoreType'
-  | 'childOurBrothersJson___parent___internal___mediaType'
-  | 'childOurBrothersJson___parent___internal___owner'
-  | 'childOurBrothersJson___parent___internal___type'
-  | 'childOurBrothersJson___children'
-  | 'childOurBrothersJson___children___id'
-  | 'childOurBrothersJson___children___parent___id'
-  | 'childOurBrothersJson___children___parent___children'
-  | 'childOurBrothersJson___children___children'
-  | 'childOurBrothersJson___children___children___id'
-  | 'childOurBrothersJson___children___children___children'
-  | 'childOurBrothersJson___children___internal___content'
-  | 'childOurBrothersJson___children___internal___contentDigest'
-  | 'childOurBrothersJson___children___internal___description'
-  | 'childOurBrothersJson___children___internal___fieldOwners'
-  | 'childOurBrothersJson___children___internal___ignoreType'
-  | 'childOurBrothersJson___children___internal___mediaType'
-  | 'childOurBrothersJson___children___internal___owner'
-  | 'childOurBrothersJson___children___internal___type'
-  | 'childOurBrothersJson___internal___content'
-  | 'childOurBrothersJson___internal___contentDigest'
-  | 'childOurBrothersJson___internal___description'
-  | 'childOurBrothersJson___internal___fieldOwners'
-  | 'childOurBrothersJson___internal___ignoreType'
-  | 'childOurBrothersJson___internal___mediaType'
-  | 'childOurBrothersJson___internal___owner'
-  | 'childOurBrothersJson___internal___type'
-  | 'childOurBrothersJson___timestamp'
-  | 'childOurBrothersJson___name'
-  | 'childOurBrothersJson___major'
-  | 'childOurBrothersJson___coolPicOfYou'
-  | 'childOurBrothersJson___bio'
-  | 'childOurBrothersJson___youreAProWrestlerWhatsYourEntranceTheme'
-  | 'childOurBrothersJson___superPower'
-  | 'childOurBrothersJson___asAChildWhatDidYouWantToBeWhenYouGrewUp'
-  | 'childOurBrothersJson___youInstantlyBecomeAnExpertInSomethingWhatWouldItBe'
-  | 'childOurBrothersJson___whatsYourFavoriteSandwichAndWhy'
-  | 'childOurBrothersJson___psiUBrags'
   | 'childrenMainMenuJson'
   | 'childrenMainMenuJson___id'
   | 'childrenMainMenuJson___parent___id'
@@ -3795,7 +3629,6 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___blocks___sliderImage1___publicURL'
   | 'frontmatter___blocks___sliderImage1___childrenImageSharp'
   | 'frontmatter___blocks___sliderImage1___childrenMarkdownRemark'
-  | 'frontmatter___blocks___sliderImage1___childrenOurBrothersJson'
   | 'frontmatter___blocks___sliderImage1___childrenMainMenuJson'
   | 'frontmatter___blocks___sliderImage1___id'
   | 'frontmatter___blocks___sliderImage1___children'
@@ -3835,7 +3668,6 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___blocks___sliderImage2___publicURL'
   | 'frontmatter___blocks___sliderImage2___childrenImageSharp'
   | 'frontmatter___blocks___sliderImage2___childrenMarkdownRemark'
-  | 'frontmatter___blocks___sliderImage2___childrenOurBrothersJson'
   | 'frontmatter___blocks___sliderImage2___childrenMainMenuJson'
   | 'frontmatter___blocks___sliderImage2___id'
   | 'frontmatter___blocks___sliderImage2___children'
@@ -3875,7 +3707,6 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___blocks___sliderImage3___publicURL'
   | 'frontmatter___blocks___sliderImage3___childrenImageSharp'
   | 'frontmatter___blocks___sliderImage3___childrenMarkdownRemark'
-  | 'frontmatter___blocks___sliderImage3___childrenOurBrothersJson'
   | 'frontmatter___blocks___sliderImage3___childrenMainMenuJson'
   | 'frontmatter___blocks___sliderImage3___id'
   | 'frontmatter___blocks___sliderImage3___children'
@@ -3915,7 +3746,6 @@ export type MarkdownRemarkFieldsEnum =
   | 'frontmatter___blocks___image___publicURL'
   | 'frontmatter___blocks___image___childrenImageSharp'
   | 'frontmatter___blocks___image___childrenMarkdownRemark'
-  | 'frontmatter___blocks___image___childrenOurBrothersJson'
   | 'frontmatter___blocks___image___childrenMainMenuJson'
   | 'frontmatter___blocks___image___id'
   | 'frontmatter___blocks___image___children'
@@ -4078,17 +3908,23 @@ export type GoogleSheetDataFilterListInput = {
 };
 
 export type GoogleSheetDataFilterInput = {
+  timestamp?: InputMaybe<StringQueryOperatorInput>;
   name?: InputMaybe<StringQueryOperatorInput>;
-  graduationYear?: InputMaybe<StringQueryOperatorInput>;
+  iConsentForMyProfileToAppearOnPsiugtCom?: InputMaybe<StringQueryOperatorInput>;
+  graduationYear?: InputMaybe<IntQueryOperatorInput>;
   major?: InputMaybe<StringQueryOperatorInput>;
-  coolPicOfYou?: InputMaybe<StringQueryOperatorInput>;
+  picture?: InputMaybe<StringQueryOperatorInput>;
   bio?: InputMaybe<StringQueryOperatorInput>;
-  pSIUBrags?: InputMaybe<StringQueryOperatorInput>;
+  hometown?: InputMaybe<StringQueryOperatorInput>;
+  brags?: InputMaybe<StringQueryOperatorInput>;
   you_reAProWrestlerWhat_sYourEntranceTheme_?: InputMaybe<StringQueryOperatorInput>;
-  superPower_?: InputMaybe<StringQueryOperatorInput>;
+  ifIWereASuperhero_MySuperpowerWouldBe?: InputMaybe<StringQueryOperatorInput>;
+  inAnotherLife_I_mPrettySureIWas?: InputMaybe<StringQueryOperatorInput>;
   asAChild_WhatDidYouWantToBeWhenYouGrewUp_?: InputMaybe<StringQueryOperatorInput>;
   youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_?: InputMaybe<StringQueryOperatorInput>;
   what_sYourFavoriteSandwichAndWhy_?: InputMaybe<StringQueryOperatorInput>;
+  hobbies?: InputMaybe<StringQueryOperatorInput>;
+  pronouns?: InputMaybe<StringQueryOperatorInput>;
   id?: InputMaybe<StringQueryOperatorInput>;
   parent?: InputMaybe<StringQueryOperatorInput>;
   internal?: InputMaybe<GoogleSheetDataInternalFilterInput>;
@@ -4234,17 +4070,23 @@ export type GoogleSheetFieldsEnum =
   | 'internal___owner'
   | 'internal___type'
   | 'data'
+  | 'data___timestamp'
   | 'data___name'
+  | 'data___iConsentForMyProfileToAppearOnPsiugtCom'
   | 'data___graduationYear'
   | 'data___major'
-  | 'data___coolPicOfYou'
+  | 'data___picture'
   | 'data___bio'
-  | 'data___pSIUBrags'
+  | 'data___hometown'
+  | 'data___brags'
   | 'data___you_reAProWrestlerWhat_sYourEntranceTheme_'
-  | 'data___superPower_'
+  | 'data___ifIWereASuperhero_MySuperpowerWouldBe'
+  | 'data___inAnotherLife_I_mPrettySureIWas'
   | 'data___asAChild_WhatDidYouWantToBeWhenYouGrewUp_'
   | 'data___youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_'
   | 'data___what_sYourFavoriteSandwichAndWhy_'
+  | 'data___hobbies'
+  | 'data___pronouns'
   | 'data___id'
   | 'data___parent'
   | 'data___internal___type'
@@ -4438,17 +4280,23 @@ export type GoogleDataSheetFieldsEnum =
   | 'internal___mediaType'
   | 'internal___owner'
   | 'internal___type'
+  | 'timestamp'
   | 'name'
+  | 'iConsentForMyProfileToAppearOnPsiugtCom'
   | 'graduationYear'
   | 'major'
-  | 'coolPicOfYou'
+  | 'picture'
   | 'bio'
-  | 'pSIUBrags'
+  | 'hometown'
+  | 'brags'
   | 'you_reAProWrestlerWhat_sYourEntranceTheme_'
-  | 'superPower_'
+  | 'ifIWereASuperhero_MySuperpowerWouldBe'
+  | 'inAnotherLife_I_mPrettySureIWas'
   | 'asAChild_WhatDidYouWantToBeWhenYouGrewUp_'
   | 'youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_'
-  | 'what_sYourFavoriteSandwichAndWhy_';
+  | 'what_sYourFavoriteSandwichAndWhy_'
+  | 'hobbies'
+  | 'pronouns';
 
 export type GoogleDataSheetGroupConnection = {
   totalCount: Scalars['Int'];
@@ -4496,211 +4344,27 @@ export type GoogleDataSheetFilterInput = {
   parent?: InputMaybe<NodeFilterInput>;
   children?: InputMaybe<NodeFilterListInput>;
   internal?: InputMaybe<InternalFilterInput>;
+  timestamp?: InputMaybe<StringQueryOperatorInput>;
   name?: InputMaybe<StringQueryOperatorInput>;
-  graduationYear?: InputMaybe<StringQueryOperatorInput>;
+  iConsentForMyProfileToAppearOnPsiugtCom?: InputMaybe<StringQueryOperatorInput>;
+  graduationYear?: InputMaybe<IntQueryOperatorInput>;
   major?: InputMaybe<StringQueryOperatorInput>;
-  coolPicOfYou?: InputMaybe<StringQueryOperatorInput>;
+  picture?: InputMaybe<StringQueryOperatorInput>;
   bio?: InputMaybe<StringQueryOperatorInput>;
-  pSIUBrags?: InputMaybe<StringQueryOperatorInput>;
+  hometown?: InputMaybe<StringQueryOperatorInput>;
+  brags?: InputMaybe<StringQueryOperatorInput>;
   you_reAProWrestlerWhat_sYourEntranceTheme_?: InputMaybe<StringQueryOperatorInput>;
-  superPower_?: InputMaybe<StringQueryOperatorInput>;
+  ifIWereASuperhero_MySuperpowerWouldBe?: InputMaybe<StringQueryOperatorInput>;
+  inAnotherLife_I_mPrettySureIWas?: InputMaybe<StringQueryOperatorInput>;
   asAChild_WhatDidYouWantToBeWhenYouGrewUp_?: InputMaybe<StringQueryOperatorInput>;
   youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_?: InputMaybe<StringQueryOperatorInput>;
   what_sYourFavoriteSandwichAndWhy_?: InputMaybe<StringQueryOperatorInput>;
+  hobbies?: InputMaybe<StringQueryOperatorInput>;
+  pronouns?: InputMaybe<StringQueryOperatorInput>;
 };
 
 export type GoogleDataSheetSortInput = {
   fields?: InputMaybe<Array<InputMaybe<GoogleDataSheetFieldsEnum>>>;
-  order?: InputMaybe<Array<InputMaybe<SortOrderEnum>>>;
-};
-
-export type OurBrothersJsonConnection = {
-  totalCount: Scalars['Int'];
-  edges: Array<OurBrothersJsonEdge>;
-  nodes: Array<OurBrothersJson>;
-  pageInfo: PageInfo;
-  distinct: Array<Scalars['String']>;
-  max?: Maybe<Scalars['Float']>;
-  min?: Maybe<Scalars['Float']>;
-  sum?: Maybe<Scalars['Float']>;
-  group: Array<OurBrothersJsonGroupConnection>;
-};
-
-
-export type OurBrothersJsonConnectionDistinctArgs = {
-  field: OurBrothersJsonFieldsEnum;
-};
-
-
-export type OurBrothersJsonConnectionMaxArgs = {
-  field: OurBrothersJsonFieldsEnum;
-};
-
-
-export type OurBrothersJsonConnectionMinArgs = {
-  field: OurBrothersJsonFieldsEnum;
-};
-
-
-export type OurBrothersJsonConnectionSumArgs = {
-  field: OurBrothersJsonFieldsEnum;
-};
-
-
-export type OurBrothersJsonConnectionGroupArgs = {
-  skip?: InputMaybe<Scalars['Int']>;
-  limit?: InputMaybe<Scalars['Int']>;
-  field: OurBrothersJsonFieldsEnum;
-};
-
-export type OurBrothersJsonEdge = {
-  next?: Maybe<OurBrothersJson>;
-  node: OurBrothersJson;
-  previous?: Maybe<OurBrothersJson>;
-};
-
-export type OurBrothersJsonFieldsEnum =
-  | 'id'
-  | 'parent___id'
-  | 'parent___parent___id'
-  | 'parent___parent___parent___id'
-  | 'parent___parent___parent___children'
-  | 'parent___parent___children'
-  | 'parent___parent___children___id'
-  | 'parent___parent___children___children'
-  | 'parent___parent___internal___content'
-  | 'parent___parent___internal___contentDigest'
-  | 'parent___parent___internal___description'
-  | 'parent___parent___internal___fieldOwners'
-  | 'parent___parent___internal___ignoreType'
-  | 'parent___parent___internal___mediaType'
-  | 'parent___parent___internal___owner'
-  | 'parent___parent___internal___type'
-  | 'parent___children'
-  | 'parent___children___id'
-  | 'parent___children___parent___id'
-  | 'parent___children___parent___children'
-  | 'parent___children___children'
-  | 'parent___children___children___id'
-  | 'parent___children___children___children'
-  | 'parent___children___internal___content'
-  | 'parent___children___internal___contentDigest'
-  | 'parent___children___internal___description'
-  | 'parent___children___internal___fieldOwners'
-  | 'parent___children___internal___ignoreType'
-  | 'parent___children___internal___mediaType'
-  | 'parent___children___internal___owner'
-  | 'parent___children___internal___type'
-  | 'parent___internal___content'
-  | 'parent___internal___contentDigest'
-  | 'parent___internal___description'
-  | 'parent___internal___fieldOwners'
-  | 'parent___internal___ignoreType'
-  | 'parent___internal___mediaType'
-  | 'parent___internal___owner'
-  | 'parent___internal___type'
-  | 'children'
-  | 'children___id'
-  | 'children___parent___id'
-  | 'children___parent___parent___id'
-  | 'children___parent___parent___children'
-  | 'children___parent___children'
-  | 'children___parent___children___id'
-  | 'children___parent___children___children'
-  | 'children___parent___internal___content'
-  | 'children___parent___internal___contentDigest'
-  | 'children___parent___internal___description'
-  | 'children___parent___internal___fieldOwners'
-  | 'children___parent___internal___ignoreType'
-  | 'children___parent___internal___mediaType'
-  | 'children___parent___internal___owner'
-  | 'children___parent___internal___type'
-  | 'children___children'
-  | 'children___children___id'
-  | 'children___children___parent___id'
-  | 'children___children___parent___children'
-  | 'children___children___children'
-  | 'children___children___children___id'
-  | 'children___children___children___children'
-  | 'children___children___internal___content'
-  | 'children___children___internal___contentDigest'
-  | 'children___children___internal___description'
-  | 'children___children___internal___fieldOwners'
-  | 'children___children___internal___ignoreType'
-  | 'children___children___internal___mediaType'
-  | 'children___children___internal___owner'
-  | 'children___children___internal___type'
-  | 'children___internal___content'
-  | 'children___internal___contentDigest'
-  | 'children___internal___description'
-  | 'children___internal___fieldOwners'
-  | 'children___internal___ignoreType'
-  | 'children___internal___mediaType'
-  | 'children___internal___owner'
-  | 'children___internal___type'
-  | 'internal___content'
-  | 'internal___contentDigest'
-  | 'internal___description'
-  | 'internal___fieldOwners'
-  | 'internal___ignoreType'
-  | 'internal___mediaType'
-  | 'internal___owner'
-  | 'internal___type'
-  | 'timestamp'
-  | 'name'
-  | 'major'
-  | 'coolPicOfYou'
-  | 'bio'
-  | 'youreAProWrestlerWhatsYourEntranceTheme'
-  | 'superPower'
-  | 'asAChildWhatDidYouWantToBeWhenYouGrewUp'
-  | 'youInstantlyBecomeAnExpertInSomethingWhatWouldItBe'
-  | 'whatsYourFavoriteSandwichAndWhy'
-  | 'psiUBrags';
-
-export type OurBrothersJsonGroupConnection = {
-  totalCount: Scalars['Int'];
-  edges: Array<OurBrothersJsonEdge>;
-  nodes: Array<OurBrothersJson>;
-  pageInfo: PageInfo;
-  distinct: Array<Scalars['String']>;
-  max?: Maybe<Scalars['Float']>;
-  min?: Maybe<Scalars['Float']>;
-  sum?: Maybe<Scalars['Float']>;
-  group: Array<OurBrothersJsonGroupConnection>;
-  field: Scalars['String'];
-  fieldValue?: Maybe<Scalars['String']>;
-};
-
-
-export type OurBrothersJsonGroupConnectionDistinctArgs = {
-  field: OurBrothersJsonFieldsEnum;
-};
-
-
-export type OurBrothersJsonGroupConnectionMaxArgs = {
-  field: OurBrothersJsonFieldsEnum;
-};
-
-
-export type OurBrothersJsonGroupConnectionMinArgs = {
-  field: OurBrothersJsonFieldsEnum;
-};
-
-
-export type OurBrothersJsonGroupConnectionSumArgs = {
-  field: OurBrothersJsonFieldsEnum;
-};
-
-
-export type OurBrothersJsonGroupConnectionGroupArgs = {
-  skip?: InputMaybe<Scalars['Int']>;
-  limit?: InputMaybe<Scalars['Int']>;
-  field: OurBrothersJsonFieldsEnum;
-};
-
-export type OurBrothersJsonSortInput = {
-  fields?: InputMaybe<Array<InputMaybe<OurBrothersJsonFieldsEnum>>>;
   order?: InputMaybe<Array<InputMaybe<SortOrderEnum>>>;
 };
 
@@ -4918,7 +4582,7 @@ export type Unnamed_1_Query = { allMainMenuJson: { edges: Array<{ node: { id: st
 export type BrothersPageQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type BrothersPageQueryQuery = { allGoogleDataSheet: { nodes: Array<{ asAChild_WhatDidYouWantToBeWhenYouGrewUp_?: string | null, bio?: string | null, coolPicOfYou?: string | null, graduationYear?: string | null, major?: string | null, name?: string | null, pSIUBrags?: string | null, superPower_?: string | null, what_sYourFavoriteSandwichAndWhy_?: string | null, youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_?: string | null, you_reAProWrestlerWhat_sYourEntranceTheme_?: string | null }> }, allFile: { nodes: Array<{ id: string, name: string, childrenImageSharp?: Array<{ gatsbyImageData: any } | null> | null }> } };
+export type BrothersPageQueryQuery = { allGoogleDataSheet: { nodes: Array<{ asAChild_WhatDidYouWantToBeWhenYouGrewUp_?: string | null, bio?: string | null, brags?: string | null, graduationYear?: number | null, hobbies?: string | null, hometown?: string | null, id: string, ifIWereASuperhero_MySuperpowerWouldBe?: string | null, inAnotherLife_I_mPrettySureIWas?: string | null, major?: string | null, name?: string | null, picture?: string | null, pronouns?: string | null, what_sYourFavoriteSandwichAndWhy_?: string | null, youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_?: string | null, you_reAProWrestlerWhat_sYourEntranceTheme_?: string | null }> }, allFile: { nodes: Array<{ id: string, name: string, childrenImageSharp?: Array<{ gatsbyImageData: any } | null> | null }> } };
 
 export type BlockPageBySlugQueryVariables = Exact<{
   slug: Scalars['String'];
