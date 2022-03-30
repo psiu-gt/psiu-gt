@@ -23,7 +23,15 @@ const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
           <div className="card-content">
             <div className="media">
               <div className="media-content">
-                <p className="title is-4">{brother.name}</p>
+                <p className="title is-4">
+                  {brother.name}{" "}
+                  <small
+                    className="is-size-6"
+                    style={{ color: "#4a4a4a", fontWeight: 400 }}
+                  >
+                    • {brother.pronouns}
+                  </small>
+                </p>
                 <p className="subtitle is-6">
                   {brother.major} | Class of {brother.graduationYear}
                 </p>
