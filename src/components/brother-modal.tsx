@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 
 const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
   return (
