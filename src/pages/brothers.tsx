@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Layout from "../components/layout";
 import { graphql } from "gatsby";
-import styled from "styled-components";
 import BrotherModal from "../components/brother-modal";
 import BrotherCard from "../components/brother-card";
 
@@ -32,7 +31,10 @@ const Brothers = ({ data }: any) => {
       )}
       <section className="section page-content">
         <div className="container">
-          <h1 className="title">Our Brothers</h1>
+          <div className="container article-header has-text-centered">
+            <h1 className="title is-1">Our Brothers</h1>
+            <hr />
+          </div>
           {[...Array(rows)].map((_, i) => (
             <div className="columns is-desktop" key={i}>
               <div className="column">
