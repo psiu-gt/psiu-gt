@@ -122,5 +122,6 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-graphql-codegen",
+    "gatsby-plugin-netlify",
   ],
 };
