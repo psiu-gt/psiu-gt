@@ -38,8 +38,14 @@ const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
             </div>
 
             <div className="content">
-              {brother.bio}
-              <br />
+              <p>{brother.bio}</p>
+              {brother.hometown && (
+                <p>
+                  <strong>Hometown</strong>
+                  <br />
+                  {brother.hometown}
+                </p>
+              )}
               <hr />
               <div>
                 <p>
