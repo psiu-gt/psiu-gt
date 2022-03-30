@@ -27,7 +27,7 @@
     "gatsby-source-google-spreadsheets": "^3.0.8",
     "gatsby-transformer-json": "^4.10.0",
     "gatsby-transformer-remark": "^5.10.2",
-    "gatsby-transformer-sharp": "^4.10.0",
+    "gatsby-transformer-sharp": "^4.11.0",
     "node-sass": "^7.0.1",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
