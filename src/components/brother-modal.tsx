@@ -2,19 +2,6 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
 import styled from "styled-components";
 
-export const BroImg = ({ image }: any) => {
-  if (image.childrenImageSharp.length < 1) {
-    return <div></div>;
-  }
-  const ref = image.childrenImageSharp[0];
-  const img = getImage(ref);
-  return img ? <GatsbyImage image={img} alt="" /> : <div></div>;
-};
-
-export const BroImgStyled = styled(BroImg)`
-  object-fit: cover;
-`;
-
 const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
   return (
     <div id="modal" className={`modal ${isActive ? "is-active" : ""}`}>
@@ -23,8 +10,12 @@ const BrotherModal = ({ brother, isActive, setIsActive, image }: any) => {
       <div className="modal-content">
         <div className="card">
           <div className="card-image">
-            <figure className="image is-4by3" style={{ paddingTop: "0px" }}>
-              <BroImgStyled image={image} />
+            <figure className="image is-4by3">
+              <img
+                src={image.publicURL}
+                alt={`Picture of ${brother.name}`}
+                style={{ objectFit: "cover" }}
+              />
             </figure>
           </div>
           <div className="card-content">

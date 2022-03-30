@@ -93,13 +93,7 @@ export const query = graphql`
       nodes {
         id
         name
-        childrenImageSharp {
-          gatsbyImageData(
-            width: 800
-            transformOptions: { fit: COVER, cropFocus: ATTENTION }
-            aspectRatio: 1.333
-          )
-        }
+        publicURL
       }
     }
   }

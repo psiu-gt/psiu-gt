@@ -42,13 +42,12 @@ const BrotherCard = ({
   return (
     <div className="card">
       <div className="card-image">
-        <figure
-          className="image is-4by3"
-          style={{
-            paddingTop: "0px",
-          }}
-        >
-          <BroImgStyled image={image} />
+        <figure className="image is-4by3">
+          <img
+            src={image.publicURL}
+            alt={`Picture of ${brother.name}`}
+            style={{ objectFit: "cover" }}
+          />
         </figure>
       </div>
       <CardContent className="card-content">

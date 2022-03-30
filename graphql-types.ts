@@ -750,7 +750,6 @@ export type GoogleSheetDataInternal = {
   type?: Maybe<Scalars['String']>;
   contentDigest?: Maybe<Scalars['String']>;
   owner?: Maybe<Scalars['String']>;
-  counter?: Maybe<Scalars['Int']>;
 };
 
 export type GoogleDataSheet = Node & {
@@ -3934,7 +3933,6 @@ export type GoogleSheetDataInternalFilterInput = {
   type?: InputMaybe<StringQueryOperatorInput>;
   contentDigest?: InputMaybe<StringQueryOperatorInput>;
   owner?: InputMaybe<StringQueryOperatorInput>;
-  counter?: InputMaybe<IntQueryOperatorInput>;
 };
 
 export type GoogleSheetConnection = {
@@ -4091,8 +4089,7 @@ export type GoogleSheetFieldsEnum =
   | 'data___parent'
   | 'data___internal___type'
   | 'data___internal___contentDigest'
-  | 'data___internal___owner'
-  | 'data___internal___counter';
+  | 'data___internal___owner';
 
 export type GoogleSheetGroupConnection = {
   totalCount: Scalars['Int'];
@@ -4582,7 +4579,7 @@ export type Unnamed_1_Query = { allMainMenuJson: { edges: Array<{ node: { id: st
 export type BrothersPageQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type BrothersPageQueryQuery = { allGoogleDataSheet: { nodes: Array<{ asAChild_WhatDidYouWantToBeWhenYouGrewUp_?: string | null, bio?: string | null, brags?: string | null, graduationYear?: number | null, hobbies?: string | null, hometown?: string | null, id: string, ifIWereASuperhero_MySuperpowerWouldBe?: string | null, inAnotherLife_I_mPrettySureIWas?: string | null, major?: string | null, name?: string | null, picture?: string | null, pronouns?: string | null, what_sYourFavoriteSandwichAndWhy_?: string | null, youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_?: string | null, you_reAProWrestlerWhat_sYourEntranceTheme_?: string | null }> }, allFile: { nodes: Array<{ id: string, name: string, childrenImageSharp?: Array<{ gatsbyImageData: any } | null> | null }> } };
+export type BrothersPageQueryQuery = { allGoogleDataSheet: { nodes: Array<{ asAChild_WhatDidYouWantToBeWhenYouGrewUp_?: string | null, bio?: string | null, brags?: string | null, graduationYear?: number | null, hobbies?: string | null, hometown?: string | null, id: string, ifIWereASuperhero_MySuperpowerWouldBe?: string | null, inAnotherLife_I_mPrettySureIWas?: string | null, major?: string | null, name?: string | null, picture?: string | null, pronouns?: string | null, what_sYourFavoriteSandwichAndWhy_?: string | null, youInstantlyBecomeAnExpertInSomething_WhatWouldItBe_?: string | null, you_reAProWrestlerWhat_sYourEntranceTheme_?: string | null }> }, allFile: { nodes: Array<{ id: string, name: string, publicURL?: string | null }> } };
 
 export type BlockPageBySlugQueryVariables = Exact<{
   slug: Scalars['String'];
