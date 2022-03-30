@@ -750,6 +750,7 @@ export type GoogleSheetDataInternal = {
   type?: Maybe<Scalars['String']>;
   contentDigest?: Maybe<Scalars['String']>;
   owner?: Maybe<Scalars['String']>;
+  counter?: Maybe<Scalars['Int']>;
 };
 
 export type GoogleDataSheet = Node & {
@@ -3933,6 +3934,7 @@ export type GoogleSheetDataInternalFilterInput = {
   type?: InputMaybe<StringQueryOperatorInput>;
   contentDigest?: InputMaybe<StringQueryOperatorInput>;
   owner?: InputMaybe<StringQueryOperatorInput>;
+  counter?: InputMaybe<IntQueryOperatorInput>;
 };
 
 export type GoogleSheetConnection = {
@@ -4089,7 +4091,8 @@ export type GoogleSheetFieldsEnum =
   | 'data___parent'
   | 'data___internal___type'
   | 'data___internal___contentDigest'
-  | 'data___internal___owner';
+  | 'data___internal___owner'
+  | 'data___internal___counter';
 
 export type GoogleSheetGroupConnection = {
   totalCount: Scalars['Int'];
