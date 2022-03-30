@@ -2,11 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const FooterWrapper = styled.div`
-  padding-bottom: 2em;
-  padding-top: 2em;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
+  &&& {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
 `;
 
 const Footer = ({ content }: any) => (
