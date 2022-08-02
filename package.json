@@ -23,7 +23,7 @@
     "gatsby-remark-copy-linked-files": "^5.11.0",
     "gatsby-remark-images": "^6.11.0",
     "gatsby-remark-relative-images": "^0.3.0",
-    "gatsby-source-filesystem": "^4.11.0",
+    "gatsby-source-filesystem": "^4.20.0",
     "gatsby-source-google-spreadsheets": "^3.0.8",
     "gatsby-transformer-json": "^4.11.0",
     "gatsby-transformer-remark": "^5.11.0",
