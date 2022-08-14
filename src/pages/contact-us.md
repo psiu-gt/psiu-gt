@@ -1,10 +1,10 @@
 ---
 title: Contact Us
----
 
+---
 ### President
 
-Luca Bonini
+Jacob Landis
 
 [luca.bonini1273@gmail.com](mailto:luca.bonini1273@gmail.com)
 
@@ -12,7 +12,7 @@ Luca Bonini
 
 ### VP of Internal Affairs
 
-Erin Falejczyk
+Katelyn Provost
 
 [internalvp@gtpsiu.org](mailto:internalvp@gtpsiu.org)
 
@@ -24,18 +24,18 @@ Asheton Arnold
 
 ### VP of Member Education
 
-Matthew Farleo
+Jerilyn Ericson
 
 [membervp@gtpsiu.org](mailto:membervp@gtpsiu.org)
 
 ### House Manager
 
-Natalie Krall
+Dashielle Heidt
 
 [housevp@gtpsiu.org](mailto:housevp@gtpsiu.org)
 
 ### Treasurer
 
-Yu Chang
+Gwen Diamond
 
 [psiuhousevp@gmail.com](mailto:psiuhousevp@gmail.com)

@@ -1,56 +1,56 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: ""
-webhook_url:
+admin_path: ''
+webhook_url: 
 sections:
-  - type: directory
-    path: src/pages/posts
-    label: News Posts
-    create: documents
-    match: "**/*"
-    exclude: index.md
-    templates:
-      - post
-  - type: heading
-    label: Content
-  - type: document
-    path: src/pages/index.md
-    label: Home
-  - type: document
-    path: src/pages/about-us.md
-    label: About Us
-  - type: document
-    path: src/pages/outreach.md
-    label: Outreach
-  - type: document
-    path: src/pages/contact-us.md
-    label: Contact Us
-  - type: directory
-    path: src/pages
-    label: All Pages
-    create: documents
-    match: "*.md"
-    new_doc_ext: md
-    templates:
-      - page
-      - blocks-page
-  - type: heading
-    label: Config
-  - type: document
-    path: src/data/main_menu.json
-    label: Nav Menu
-  - type: document
-    path: site-config.json
-    label: Site Config
+- type: directory
+  path: src/pages/posts
+  label: News Posts
+  create: documents
+  match: "**/*"
+  exclude: index.md
+  templates:
+  - post
+- type: heading
+  label: Content
+- type: document
+  path: src/pages/index.md
+  label: Home
+- type: document
+  path: src/pages/about-us.md
+  label: About Us
+- type: document
+  path: src/pages/outreach.md
+  label: Outreach
+- type: document
+  path: src/pages/contact-us.md
+  label: Contact Us
+- type: directory
+  path: src/pages
+  label: All Pages
+  create: documents
+  match: "*.md"
+  new_doc_ext: md
+  templates:
+  - page
+  - blocks-page
+- type: heading
+  label: Config
+- type: document
+  path: src/data/main_menu.json
+  label: Nav Menu
+- type: document
+  path: site-config.json
+  label: Site Config
 upload_dir: src/images
 public_path: "/src/images"
-front_matter_path: ""
+front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_env:
-    - PATH_PREFIX=/
+  - PATH_PREFIX=/
   preview_output_directory: public
   install_dependencies_command: npm install
   preview_docker_image: node:10
