@@ -6,36 +6,40 @@ title: Contact Us
 
 Jacob Landis
 
-[luca.bonini1273@gmail.com](mailto:luca.bonini1273@gmail.com)
-
-[president@gtpsiu.org](president@gtpsiu.org)
+[archon@psiugt.com](archon@psiugt.com)
 
 ### VP of Internal Affairs
 
 Katelyn Provost
 
-[internalvp@gtpsiu.org](mailto:internalvp@gtpsiu.org)
+[internal@psiugt.com]()
 
 ### VP of External Affairs
 
 Asheton Arnold
 
-[externalvp@gtpsiu.org](mailto:mailto:externalvp@gtpsiu.org)
+[external@psiugt.com](external@psiugt.com)
 
 ### VP of Member Education
 
 Jerilyn Ericson
 
-[membervp@gtpsiu.org](mailto:membervp@gtpsiu.org)
+[membered@psiugt.com](membered@psiugt.com)
 
 ### House Manager
 
 Dashielle Heidt
 
-[housevp@gtpsiu.org](mailto:housevp@gtpsiu.org)
+[house@psiugt.com](house@psiugt.com)
 
 ### Treasurer
 
 Gwen Diamond
 
-[psiuhousevp@gmail.com](mailto:psiuhousevp@gmail.com)
+[treasurer@psiugt.com](treasurer@psiugt.com)
+
+### Executive Council
+
+Don't know who you need? Email us all!
+
+[ec@psiugt.com](ec@psiugt.com)
