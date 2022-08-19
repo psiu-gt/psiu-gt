@@ -1,4 +1,10 @@
 const config = require("./site-config.json");
+const path = require("path");
+
+require("dotenv").config({
+  path: `.env`,
+  // path: `.env.${process.env.NODE_ENV}`,
+});
 
 module.exports = {
   pathPrefix: process.env.PATH_PREFIX || "/",
@@ -76,10 +82,46 @@ module.exports = {
         defer: false,
       },
     },
+    {
+      resolve: "gatsby-source-google-spreadsheets",
+      options: {
+        spreadsheetId: process.env.SPREADSHEET_ID,
+        worksheetTitle: "data",
+        credentials: {
+          type: "service_account",
+          project_id: process.env.PROJECT_ID,
+          private_key_id: process.env.PRIVATE_KEY_ID,
+          private_key: process.env.GOOGLE_PRIVATE_KEY.replace(
+            /(\\r)|(\\n)/g,
+            "\n"
+          ),
+          client_email: process.env.GOOGLE_CLIENT_EMAIL,
+          client_id: "",
+          auth_uri: "https://accounts.google.com/o/oauth2/auth",
+          token_uri: "https://oauth2.googleapis.com/token",
+          auth_provider_x509_cert_url:
+            "https://www.googleapis.com/oauth2/v1/certs",
+          client_x509_cert_url: `https://www.googleapis.com/robot/v1/metadata/x509/${process.env.PROJECT_ID}%40appspot.gserviceaccount.com`,
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-drive-fileid",
+      options: {
+        folderId: process.env.GOOGLE_DRIVE_FOLDER_ID,
+        key: {
+          private_key: process.env.GOOGLE_PRIVATE_KEY,
+          client_email: process.env.GOOGLE_CLIENT_EMAIL,
+        },
+        destination: path.join(__dirname, "src/images/bros"),
+        pageSize: 100,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     "gatsby-transformer-json",
     "gatsby-plugin-sass",
     "gatsby-plugin-catch-links",
     "gatsby-plugin-graphql-codegen",
+    "gatsby-plugin-netlify",
   ],
 };

@@ -1,13 +1,22 @@
 import React from "react";
-import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
+import styled from "styled-components";
 
 import Header from "./header";
 import Footer from "./footer";
 import "../css/main.scss";
 
 import favicon from "./favicon.png";
+
+const LayoutWrapper = styled.div`
+  min-height: 100vh;
+  position: relative;
+`;
+
+const ContentWrapper = styled.div`
+  padding-bottom: 9.125em;
+`;
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <StaticQuery
@@ -39,16 +48,14 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        {children}
-        <Footer content={data.site.siteMetadata.footer} />
+        <LayoutWrapper>
+          <Header />
+          <ContentWrapper>{children}</ContentWrapper>
+          <Footer content={data.site.siteMetadata.footer} />
+        </LayoutWrapper>
       </>
     )}
   />
 );
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default Layout;

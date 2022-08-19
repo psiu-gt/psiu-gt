@@ -2,31 +2,31 @@
 label: Main Menu
 hide_body: false
 fields:
-  - name: main_menu
-    label: Main menu
-    type: field_group_list
-    fields:
-      - name: url
-        label: Url
-        type: text
-        hidden: false
-        default: ""
-      - name: title
-        label: Title
-        type: text
-        hidden: false
-        default: ""
-      - type: select
-        name: type
-        config:
-          source:
-            type: simple
-          options:
-            - internal
-            - external
-        label: Type
-        default: internal
+- name: main_menu
+  label: Main menu
+  type: field_group_list
+  fields:
+  - name: url
+    label: Url
+    type: text
     hidden: false
-    default: ""
+    default: ''
+  - name: title
+    label: Title
+    type: text
+    hidden: false
+    default: ''
+  - type: select
+    name: type
     config:
-      labelField: title
+      source:
+        type: simple
+      options:
+      - internal
+      - external
+    label: Type
+    default: internal
+  hidden: false
+  default: ''
+  config:
+    labelField: title

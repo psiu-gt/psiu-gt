@@ -1,7 +1,18 @@
 import React from "react";
+import styled from "styled-components";
+
+const FooterWrapper = styled.div`
+  &&& {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+`;
 
 const Footer = ({ content }: any) => (
-  <footer className="section site-footer">
+  <FooterWrapper className="footer has-background-info	">
     <div className="social-icons is-centered">
       <a
         href="https://www.facebook.com/psiugt/"
@@ -32,7 +43,7 @@ const Footer = ({ content }: any) => (
       className="container has-text-centered"
       dangerouslySetInnerHTML={{ __html: content }}
     />
-  </footer>
+  </FooterWrapper>
 );
 
 export default Footer;

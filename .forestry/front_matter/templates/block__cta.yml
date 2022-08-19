@@ -3,36 +3,36 @@ label: block__cta
 hide_body: false
 display_field: title
 fields:
+- type: text
+  name: component
+  label: component
+  default: cta
+- type: text
+  name: title
+  label: Title
+- type: text
+  name: subtitle
+  label: Subtitle
+- type: select
+  name: background
+  config:
+    source:
+      type: simple
+    options:
+    - transparent
+    - primary
+    - dark
+    - light
+    - info
+  label: Background
+  default: transparent
+- type: field_group
+  name: button
+  label: Button
+  fields:
   - type: text
-    name: component
-    label: component
-    default: cta
+    name: url
+    label: URL
   - type: text
-    name: title
-    label: Title
-  - type: text
-    name: subtitle
-    label: Subtitle
-  - type: select
-    name: background
-    config:
-      source:
-        type: simple
-      options:
-        - transparent
-        - primary
-        - dark
-        - light
-        - info
-    label: Background
-    default: transparent
-  - type: field_group
-    name: button
-    label: Button
-    fields:
-      - type: text
-        name: url
-        label: URL
-      - type: text
-        name: text
-        label: Text
+    name: text
+    label: Text
