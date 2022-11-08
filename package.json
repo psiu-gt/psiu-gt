@@ -9,7 +9,7 @@
     "bulma-carousel": "^4.0.24",
     "bulma-social": "^2.0.0",
     "gatsby": "^4.21.1",
-    "gatsby-cli": "^4.11.0",
+    "gatsby-cli": "^5.0.0",
     "gatsby-plugin-catch-links": "^4.11.0",
     "gatsby-plugin-drive-fileid": "^0.2.2",
     "gatsby-plugin-google-analytics": "^4.11.0",
