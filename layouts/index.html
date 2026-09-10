@@ -1,0 +1,46 @@
+{{ define "main" }}
+{{ $hero := .Params.hero }}
+<section class="landing">
+  <div class="landing-overlay"></div>
+  <div class="carousel">
+    {{ range $i, $img := $hero.images }}
+      <img class="carousel-slide{{ if eq $i 0 }} is-active{{ end }}" src="{{ $img | relURL }}" alt="">
+    {{ end }}
+  </div>
+  <div class="landing-text">
+    <h1 id="title">{{ $hero.title }}</h1>
+    <p id="subtitle">{{ $hero.subtitle }} <span id="inclusive">{{ $hero.subtitle_highlight }}</span>{{ $hero.subtitle_end }}</p>
+  </div>
+  <div class="carousel-dots"></div>
+</section>
+
+{{ with .Params.feature }}
+<section class="feature">
+  <div class="feature-columns">
+    <div class="feature-image">
+      <img src="{{ .image | relURL }}" alt="{{ .title }}">
+    </div>
+    <div class="feature-text">
+      <h2 class="feature-title">{{ .title }}</h2>
+      <div class="content">{{ $.Content }}</div>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<section class="band band-news">
+  <div class="container">
+    <h2 class="band-title">{{ .Params.news.title }}</h2>
+    {{ partial "post-list.html" (where .Site.RegularPages "Section" "posts") }}
+  </div>
+</section>
+
+{{ with .Params.rush }}
+<section class="band band-rush">
+  <div class="container">
+    <h2 class="band-title">{{ .title }}</h2>
+    <a class="button-outline" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .button }}</a>
+  </div>
+</section>
+{{ end }}
+{{ end }}

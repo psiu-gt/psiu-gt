@@ -1,0 +1,26 @@
+<header>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item brand" href="{{ "/" | relURL }}">{{ partial "owl.html" . }}ΨΥ</a>
+      <button class="navbar-burger" type="button" aria-label="menu" aria-expanded="false" aria-controls="mainMenu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+    <div id="mainMenu" class="navbar-menu">
+      {{ range .Site.Menus.main }}
+        {{ if .HasChildren }}
+          <div class="navbar-item has-dropdown">
+            <a class="navbar-link" href="{{ .URL }}">{{ .Name }}</a>
+            <div class="navbar-dropdown">
+              {{ range .Children }}
+                <a class="navbar-item" href="{{ .URL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a>
+              {{ end }}
+            </div>
+          </div>
+        {{ else }}
+          <a class="navbar-item" href="{{ .URL }}"{{ if .Params.external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Name }}</a>
+        {{ end }}
+      {{ end }}
+    </div>
+  </nav>
+</header>

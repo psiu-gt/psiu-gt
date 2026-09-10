@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="page">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+  </header>
+  <main class="container">
+    {{ with .Content }}<div class="content">{{ . }}</div>{{ end }}
+    <hr>
+    {{ partial "post-list.html" .RegularPages }}
+  </main>
+</section>
+{{ end }}

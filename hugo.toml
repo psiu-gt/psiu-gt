@@ -1,0 +1,86 @@
+baseURL = "https://psiugt.org/"
+languageCode = "en"
+title = "Psi Upsilon Gamma Tau"
+disableKinds = ["taxonomy", "term"]
+
+[params]
+  # Footer text; the year is filled in with the build date at generation time.
+  copyright = "Psi Upsilon Gamma Tau"
+  [params.social]
+    facebook = "https://www.facebook.com/psiugt/"
+    instagram = "https://www.instagram.com/gtpsiu"
+    twitter = "https://twitter.com/psiugt"
+
+[markup.goldmark.renderer]
+  # Allow raw HTML (e.g. the calendar iframes) inside Markdown content.
+  unsafe = true
+
+# Main navigation. Items with a `parent` become dropdown entries.
+# Set `params.external = true` to open a link in a new tab.
+[[menus.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "About Us"
+  identifier = "about"
+  url = "/about-us/"
+  weight = 20
+[[menus.main]]
+  name = "About Us"
+  parent = "about"
+  url = "/about-us/"
+  weight = 1
+[[menus.main]]
+  name = "Psi Upsilon International"
+  parent = "about"
+  url = "https://psiu.org/"
+  weight = 2
+  [menus.main.params]
+    external = true
+
+[[menus.main]]
+  name = "News"
+  url = "/posts/"
+  weight = 30
+
+[[menus.main]]
+  name = "Events"
+  identifier = "events"
+  url = "/"
+  weight = 40
+[[menus.main]]
+  name = "Calendar"
+  parent = "events"
+  url = "/calendar/"
+  weight = 1
+[[menus.main]]
+  name = "Photo Gallery"
+  parent = "events"
+  url = "https://www.instagram.com/gtpsiu"
+  weight = 2
+
+[[menus.main]]
+  name = "Alumni"
+  url = "http://www.pusog.org/"
+  weight = 50
+  [menus.main.params]
+    external = true
+
+[[menus.main]]
+  name = "Outreach"
+  url = "/outreach/"
+  weight = 60
+
+[[menus.main]]
+  name = "Rush"
+  url = "https://rush.psiugt.com"
+  weight = 70
+  [menus.main.params]
+    external = true
+
+[[menus.main]]
+  name = "Contact Us"
+  url = "/contact-us/"
+  weight = 80
