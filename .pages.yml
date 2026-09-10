@@ -1,4 +1,4 @@
-media: media
+media: static/img
 content:
   - name: pages
     label: Pages
