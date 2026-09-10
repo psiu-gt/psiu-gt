@@ -4,9 +4,17 @@
 
 Home page for the Psi Upsilon fraternity's Gamma Tau chapter.
 
-This is a static site generated using the [hugo](https://gohugo.io/) framework.
+## Editing Content
+
+For non-technical folks, edits can be made from the browser with
+[Pages CMS](https://pagescms.org/): sign in with GitHub, open this repository
+and edit the home page, pages, news posts, calendar embed and site settings.
+Every save is a git commit, which should automatically build and deploy.
+
 
 ## Local Development
+
+This is a static site generated using the [hugo](https://gohugo.io/) framework.
 
 1. [Install Hugo](https://gohugo.io/installation/)
 

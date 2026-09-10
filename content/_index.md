@@ -6,12 +6,12 @@ hero:
   subtitle_highlight: "Gender Inclusive"
   subtitle_end: "Fraternity"
   images:
-    - img/psiupsilon2.jpg
-    - img/psiupsilon1.jpg
-    - img/psiupsilon3.jpg
+    - /img/psiupsilon2.jpg
+    - /img/psiupsilon1.jpg
+    - /img/psiupsilon3.jpg
 feature:
   title: "\"Individual standards, not standard individuals.\""
-  image: img/feature.jpg
+  image: /img/feature.jpg
 news:
   title: "Latest News"
 rush:

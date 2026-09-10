@@ -1,11 +1,284 @@
-media: static/img
+# Pages CMS configuration (https://pagescms.org/docs/configuration/)
+#
+# This file tells the Pages CMS editor which files are editable and what
+# fields each one has. Hugo reads the same files, so anything saved from the
+# CMS is a normal git commit that Netlify builds and deploys.
+
+media:
+  input: static/img
+  output: /img
+  categories: [image]
+  rename: safe
+
+settings:
+  content:
+    # Keep any front matter / TOML keys the CMS doesn't know about (for example
+    # `layout` on the calendar page, or `disableKinds` in hugo.toml) instead of
+    # dropping them when a file is saved from the editor.
+    merge: true
+
+components:
+  # Shared "body" definition for Markdown pages and posts.
+  body:
+    type: rich-text
+    label: Content
+    options:
+      format: markdown
+
 content:
-  - name: pages
-    label: Pages
-    type: collection
-    path: content
+  - name: home
+    label: Home page
+    description: The landing page. Images and text in the hero, feature and rush sections.
+    type: file
+    path: content/_index.md
+    operations:
+      delete: false
     fields:
       - name: title
+        label: Title
         type: string
+        description: Only shown in the browser tab.
+        required: true
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - name: title
+            label: Headline
+            type: string
+            required: true
+          - name: subtitle
+            label: Subtitle
+            type: string
+            description: Text before the highlighted words.
+          - name: subtitle_highlight
+            label: Highlighted words
+            type: string
+            description: Rendered in the accent color.
+          - name: subtitle_end
+            label: Subtitle ending
+            type: string
+            description: Text after the highlighted words.
+          - name: images
+            label: Slideshow images
+            type: image
+            description: Full-width background photos that fade between each other.
+            list: true
+      - name: feature
+        label: Feature
+        type: object
+        fields:
+          - name: title
+            label: Quote
+            type: string
+          - name: image
+            label: Photo
+            type: image
+      - name: news
+        label: News section
+        type: object
+        fields:
+          - name: title
+            label: Heading
+            type: string
+            default: Latest News
+      - name: rush
+        label: Rush section
+        type: object
+        fields:
+          - name: title
+            label: Heading
+            type: string
+          - name: button
+            label: Button text
+            type: string
+          - name: url
+            label: Button link
+            type: string
+            pattern:
+              regex: "^https?://.+"
+              message: Must be a full URL starting with http:// or https://
       - name: body
-        type: rich-text
+        component: body
+        label: Intro text
+        description: Shown next to the feature photo.
+
+  - name: pages
+    label: Pages
+    description: Standalone pages such as About Us, Outreach and Contact Us.
+    type: collection
+    path: content
+    subfolders: false
+    exclude:
+      - _index.md
+      - calendar.md
+      - posts
+    filename: "{primary}.md"
+    view:
+      fields: [title]
+      primary: title
+      sort: [title]
+      search: [title, body]
+      default:
+        sort: title
+        order: asc
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: body
+        component: body
+
+  - name: news
+    label: News
+    type: group
+    items:
+      - name: posts
+        label: Posts
+        description: News posts and statements. Newest first on the home page and the News page.
+        type: collection
+        path: content/posts
+        subfolders: false
+        exclude:
+          - _index.md
+        filename: "{primary}.md"
+        view:
+          fields: [title, date, draft]
+          primary: title
+          sort: [date, title]
+          search: [title, body]
+          default:
+            sort: date
+            order: desc
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: date
+            label: Date
+            type: date
+            required: true
+            options:
+              format: yyyy-MM-dd
+          - name: draft
+            label: Draft
+            type: boolean
+            default: false
+            description: Drafts are hidden from the live site.
+          - name: body
+            component: body
+
+      - name: news-page
+        label: News page
+        description: The heading and optional intro text shown above the list of posts.
+        type: file
+        path: content/posts/_index.md
+        operations:
+          delete: false
+        fields:
+          - name: title
+            label: Title
+            type: string
+            required: true
+          - name: body
+            component: body
+            label: Intro text
+
+  - name: calendar
+    label: Calendar
+    description: The Events > Calendar page. Contains the embedded Google Calendar HTML.
+    type: file
+    path: content/calendar.md
+    operations:
+      delete: false
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: body
+        label: Embed HTML
+        type: code
+        description: Raw HTML for the Google Calendar iframes. Change the src to point at a different calendar.
+        options:
+          format: html
+
+  - name: site
+    label: Site settings
+    description: Site title, social links and the navigation menu (hugo.toml).
+    type: file
+    path: hugo.toml
+    format: toml
+    operations:
+      delete: false
+    fields:
+      - name: title
+        label: Site title
+        type: string
+        required: true
+      - name: params
+        label: Footer
+        type: object
+        fields:
+          - name: copyright
+            label: Copyright holder
+            type: string
+            description: The year is filled in automatically.
+          - name: social
+            label: Social links
+            type: object
+            fields:
+              - name: facebook
+                label: Facebook
+                type: string
+              - name: instagram
+                label: Instagram
+                type: string
+              - name: twitter
+                label: Twitter
+                type: string
+      - name: menus
+        label: Navigation
+        type: object
+        fields:
+          - name: main
+            label: Menu items
+            type: object
+            description: Items are ordered by weight (smaller first). Give an item an identifier and set that as the parent on other items to make a dropdown.
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
+            fields:
+              - name: name
+                label: Label
+                type: string
+                required: true
+              - name: url
+                label: Link
+                type: string
+                required: true
+                description: A path like /about-us/ or a full URL.
+              - name: weight
+                label: Weight
+                type: number
+                description: Controls the order. Lower numbers appear first.
+                options:
+                  min: 0
+              - name: identifier
+                label: Identifier
+                type: string
+                description: Optional. Set this on a top-level item so other items can use it as their parent.
+              - name: parent
+                label: Parent
+                type: string
+                description: Optional. The identifier of the top-level item this should appear under.
+              - name: params
+                label: Options
+                type: object
+                fields:
+                  - name: external
+                    label: Open in a new tab
+                    type: boolean
