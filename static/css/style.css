@@ -480,11 +480,9 @@ a.navbar-item:hover, .navbar-link:hover, .has-dropdown:hover > .navbar-link {
   border-radius: 4px;
   color: #fff;
   font-size: 1.25rem;
+  background: var(--social-color, #555);
 }
-.social:hover { color: #fff; }
-.social.facebook { background: #1877f2; }
-.social.facebook:hover { background: #0e70f0; }
-.social.instagram { background: #ee5262; }
-.social.instagram:hover { background: #ed4657; }
-.social.twitter { background: #1da1f2; }
-.social.twitter:hover { background: #119cf1; }
+.social:hover {
+  color: #fff;
+  filter: brightness(0.92);
+}

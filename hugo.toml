@@ -6,10 +6,25 @@ disableKinds = ["taxonomy", "term"]
 [params]
   # Footer text; the year is filled in with the build date at generation time.
   copyright = "Psi Upsilon Gamma Tau"
-  [params.social]
-    facebook = "https://www.facebook.com/psiugt/"
-    instagram = "https://www.instagram.com/gtpsiu"
-    twitter = "https://twitter.com/psiugt"
+
+# Social links shown in the home page hero and the footer, in this order.
+# `icon` is a Font Awesome brand icon name (https://fontawesome.com/search?f=brands),
+# `color` is the button background.
+[[params.social]]
+  name = "Facebook"
+  icon = "facebook"
+  url = "https://www.facebook.com/psiugt/"
+  color = "#1877f2"
+[[params.social]]
+  name = "Instagram"
+  icon = "instagram"
+  url = "https://www.instagram.com/gtpsiu"
+  color = "#ee5262"
+[[params.social]]
+  name = "Twitter"
+  icon = "twitter"
+  url = "https://twitter.com/psiugt"
+  color = "#1da1f2"
 
 [markup.goldmark.renderer]
   # Allow raw HTML (e.g. the calendar iframes) inside Markdown content.

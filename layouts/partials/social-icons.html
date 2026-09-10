@@ -1,7 +1,7 @@
 <div class="social-icons">
-  {{ with .Site.Params.social }}
-    {{ with .facebook }}<a class="social facebook" href="{{ . }}" aria-label="Facebook"><i class="fa fa-facebook"></i></a>{{ end }}
-    {{ with .instagram }}<a class="social instagram" href="{{ . }}" aria-label="Instagram"><i class="fa fa-instagram"></i></a>{{ end }}
-    {{ with .twitter }}<a class="social twitter" href="{{ . }}" aria-label="Twitter"><i class="fa fa-twitter"></i></a>{{ end }}
+  {{ range .Site.Params.social }}
+    {{ if and .url .icon }}
+      <a class="social" href="{{ .url }}" aria-label="{{ .name | default .icon }}" target="_blank" rel="noopener noreferrer"{{ with .color }} style="--social-color: {{ . | safeCSS }}"{{ end }}><i class="fa-brands fa-{{ .icon }}"></i></a>
+    {{ end }}
   {{ end }}
 </div>

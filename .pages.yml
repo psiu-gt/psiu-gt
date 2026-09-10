@@ -229,16 +229,36 @@ content:
           - name: social
             label: Social links
             type: object
+            description: Buttons shown in the home page hero and the footer, in this order.
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{name}"
             fields:
-              - name: facebook
-                label: Facebook
+              - name: name
+                label: Name
                 type: string
-              - name: instagram
-                label: Instagram
+                required: true
+                description: Used as the accessible label, e.g. Instagram.
+              - name: icon
+                label: Icon
                 type: string
-              - name: twitter
-                label: Twitter
+                required: true
+                description: A Font Awesome brand icon name, e.g. facebook, instagram, x-twitter, discord, tiktok, youtube, linkedin. Browse at https://fontawesome.com/search?f=brands
+              - name: url
+                label: Link
                 type: string
+                required: true
+                pattern:
+                  regex: "^https?://.+"
+                  message: Must be a full URL starting with http:// or https://
+              - name: color
+                label: Button color
+                type: string
+                description: A hex color like #1877f2. Leave blank for gray.
+                pattern:
+                  regex: "^#([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$"
+                  message: Must be a hex color like #1877f2
       - name: menus
         label: Navigation
         type: object

@@ -7,7 +7,9 @@ Home page for the Psi Upsilon fraternity's Gamma Tau chapter.
 ## Editing Content
 
 For non-technical folks, edits can be made from the browser with
-[Pages CMS](https://pagescms.org/): sign in with GitHub, open this repository
+[Pages CMS](https://pagescms.org/):
+
+Sign in with GitHub, open [this repository](https://app.pagescms.org/psiu-gt/psiu-gt/)
 and edit the home page, pages, news posts, calendar embed and site settings.
 Every save is a git commit, which should automatically build and deploy.
 
