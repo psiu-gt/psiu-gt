@@ -275,6 +275,11 @@ a.navbar-item:hover, .navbar-link:hover, .has-dropdown:hover > .navbar-link {
 
 #inclusive { padding-right: 7px; }
 
+.landing-text .social-icons {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
 @media (max-width: 1025px) {
   #title { font-size: 4rem; }
   .landing-text { margin: 0; padding: 0; }
