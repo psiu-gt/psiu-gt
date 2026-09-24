@@ -1,12 +1,11 @@
 ---
-title: "Contact Us"
+title: Contact Us
 ---
-
 ### President
 
-Luca Bonini
+Carlos Sanchez
 
-[luca.bonini1273@gmail.com](mailto:luca.bonini1273@gmail.com)
+[470-699-9409](tel:4706999409)
 
 [president@gtpsiu.org](mailto:president@gtpsiu.org)
 
